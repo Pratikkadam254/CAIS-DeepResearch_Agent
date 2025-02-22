@@ -1,0 +1,30 @@
+services:
+  node-app:
+    build:
+      context: .
+      dockerfile: docker/node/Dockerfile
+    env_file: .env.local
+    networks:
+      - app-network
+    depends_on:
+      fastapi:
+        condition: service_healthy
+
+  fastapi:
+    build:
+      context: .
+      dockerfile: docker/fastapi/Dockerfile
+    env_file: .env.local
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    ports:
+      - "8000:8000"
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,1314 @@
+# Final Report on AI Agents During the 7th Week of 2025
+
+This report synthesizes comprehensive research learnings from various domains—regulatory, technical, industrial, risk management, and global governance—to present a detailed account of all events and developments related to "AI Agents" during the 7th week of 2025. The report is organized into thematic sections describing key regulatory updates, technological innovations, business strategies, integration challenges, and outlooks for both enterprise and public sector applications. It also offers insights into multi-agent orchestration, reinforcement learning from human feedback (RLHF), risk mitigation strategies, evaluation benchmarks, and the evolving global AI regulatory landscape.
+
+---
+
+## 1. Introduction
+
+In the 7th week of 2025, the AI agents space witnessed unprecedented activity across multiple fronts. Both public events and internal developments have been reported from academic research, industry announcements, regulatory changes, and emerging strategic M&A activities. The unified narrative reveals a maturing field where stringent risk management, advanced technical architectures, and enhanced global regulatory collaboration are redefining what it means to deploy autonomous, agentic AI.
+
+This report, drawing on detailed learnings, provides a holistic view of these extensive developments. It integrates over 200 individual research learnings covering topics ranging from technical benchmarks and quantization methods to legislative reforms and transatlantic policy alignment.
+
+---
+
+## 2. Regulatory and Compliance Landscape
+
+### 2.1. US and State-Level Developments
+
+- **US State-Level Innovation:** Multiple state-level legislative efforts, including Colorado’s AI Act, Illinois HB 3773, and NYC Local Law 144, continue to roll out with specific obligations for AI systems, focusing on risk management, transparency, and mitigation of algorithmic bias in employment and consumer decisions. These laws impose fines and require documentation and audit trails that track AI systems' functioning.
+
+- **Federal Regulatory Fragmentation:** The United States maintains a decentralized approach where existing agencies (FTC, EEOC, CFPB) and executive orders (e.g., the recent Trump-era deregulatory move in January 2025) provide guidance without comprehensive federal AI legislation. This patchwork environment creates challenges for multinational companies as they reconcile state-specific mandates with voluntary frameworks such as NIST’s AI Risk Management Framework.
+
+### 2.2. EU AI Act and Global Implications
+
+- **EU AI Act Implementation:** The EU’s flagship AI regulatory regime has entered its enforcement phase—with high-risk systems required to implement risk management systems, detailed documentation, conformity assessments, and human oversight measures. Fines can reach up to €35 million or 7% of global annual turnover. The system employs a risk-based classification that covers unacceptable to minimal risk systems.
+
+- **Extraterritorial Impact:** The extraterritorial clause of the EU AI Act is reshaping global compliance; US and non‑EU companies offering AI tools in the EU now face significant regulatory pressure, catalyzing transatlantic conversations through the EU–US Trade and Technology Council. Measures from transnational initiatives aim to harmonize terminologies (now refreshed with 13 new terms and 24 amendments) and evaluation metrics to bridge divergent regulatory philosophies.
+
+- **Asia’s Mixed Regulatory Approach:** In Asia, Singapore’s proactive Model AI Governance Framework and China’s state-controlled measures (including deep synthesis provisions) illustrate a mix of flexible and stringent strategies. These disparate regional models underscore a growing need for internationally harmonized standards which are being pursued via bodies such as the OECD and the Partnership on AI.
+
+---
+
+## 3. Technical Innovations and Architectures
+
+### 3.1. Evolution of AI Agent Systems
+
+Recent advances have shifted AI agents from simple content generators to fully autonomous, multi-step decision-making engines. Key breakthroughs include:
+
+- **Advanced LLM Architectures:** LLMs are incorporating chain-of-thought (CoT) reasoning to enable step-by-step inference, while architectures like OpenAI’s GPT-4, Anthropic’s Claude 3, and Google’s Gemini 2.0 have set high benchmarks in multistep reasoning and multimodal integration. Notably, smaller models like DeepSeek have demonstrated that with a mixture-of-experts design and selective parameter activation, models can achieve comparable performance at a fraction of the cost and energy consumption compared to traditional architectures.
+
+- **Quantization and Efficient Inference:** Techniques using AWQ, GPTQ, float16, int8 strategies have been shown to reduce memory requirements and improve throughput. Reports indicate that DeepSeek’s approach can deliver 3× higher tokens per second with sub-150 ms latency on relatively modest instance types compared to larger LLM deployments.
+
+### 3.2. Multi-Agent Coordination and Orchestration
+
+Innovative frameworks for multi-agent systems have emerged, demonstrating diverse orchestration strategies:
+
+- **Centralized vs Decentralized Models:** Frameworks such as CrewAI emphasize robust role-based delegation with integrated memory modules (short-term, long-term, vector-based) to support hierarchical coordination, while lightweight experimental designs like OpenAI Swarm adopt a stateless conversational model with dynamic handoff routines.
+
+- **Hybrid Architectures:** Integration of memory augmentation, tool delegation, and reinforcement learning allow autonomous agents to perform complex tasks with minimal human oversight. These systems have been employed in applications ranging from financial risk management to digital customer support and regulatory compliance (e.g., automated churn analysis, predictive maintenance, and online document processing for government agencies).
+
+---
+
+## 4. Deployment and Integration in Legacy Systems
+
+### 4.1. Modernization Strategies
+
+- **Legacy Integration:** Major providers such as Snowflake’s Cortex Agents and AWS SageMaker are demonstrating efficient pathways for integrating AI capabilities with legacy systems. Techniques like Zero-Copy Cloning and Time Travel help minimize downtime and operational disruptions while migrating critical data from COBOL and other outdated platforms into modern, cloud-native infrastructures.
+
+- **Service Mesh and API Integration:** Deployment strategies involve decoupling business logic from legacy infrastructure using orchestrators and middleware (e.g., Apache Camel-K, WSO2 Micro Integrator). These approaches support incremental modernization through wrapper solutions that enable seamless, secure API interactions and efficient data transformation pipelines.
+
+### 4.2. Observability and Security Enhancements
+
+- **Advanced Observability:** New platforms (e.g., Acceldata’s Data Observability Cloud) are designed to provide real-time anomaly detection and continuous monitoring, reducing incident resolution times dramatically (from days to hours) and ensuring near-real-time data quality and security in environments such as AWS and Azure.
+
+- **Granular Security Models:** Implementations use a layered security model involving AWS VPC interface endpoints, IAM role-based policies, and continuous integration with AWS Systems Manager for patch management and audit logging, ensuring secure multi-agent communication and data integrity.
+
+---
+
+## 5. Risk Management, Bias Mitigation, and Evaluation Metrics
+
+### 5.1. RLHF and Beyond
+
+- **Mitigating Hallucinations:** Reinforcement Learning from Human Feedback (RLHF) remains central to reducing hallucinations and aligning model outputs with human values. Innovative approaches like Direct Preference Optimization (DPO), Direct RLAIF, and adaptive sampling strategies (APO) are showing significant improvements in factual accuracy and reduced error rates in both open-domain and domain-specific tasks.
+
+- **Hybrid Training Pipelines:** Combining supervised fine-tuning (SFT) with RLHF in hybrid pipelines has enhanced output stability. Techniques building on chain-of-thought prompting, combined with external retrieval (RAG systems), have yielded measurable performance gains (e.g., 10+ percentage point improvements on multi-hop reasoning benchmarks).
+
+### 5.2. Evaluation Frameworks
+
+- **Comprehensive Metrics:** New evaluation frameworks integrate multiple quantitative and qualitative metrics. Benchmarks like HaluEval 2.0 have been developed to assess aspects such as factual claim density, grounding, and contextual coherence. Multi-agent systems are now evaluated based on task success rate, planning indices, token efficiency, memory coherence, and even specialized metrics like the LLM cluster-agent metric.
+
+- **Explainable AI (XAI):** Tools such as LIME, SHAP, Grad-CAM++, and knowledge-graph augmented methods are being used to ensure that model decisions are transparent and interpretable, both during training and in real-time deployments. These advances are critical in sectors such as healthcare and finance where decisions must be clearly traceable and explainable.
+
+---
+
+## 6. Global Business Developments and M&A
+
+### 6.1. Investment and Strategic Alliances
+
+- **Rising M&A Activity:** Business leaders are increasingly leveraging M&A as a tool to integrate AI capabilities. Exclusive licensing models and revenue-sharing arrangements are becoming common as companies adjust due diligence frameworks to capture risks peculiar to AI—such as data provenance, algorithmic bias, and ongoing compliance with frameworks like the EU AI Act.
+
+- **Strategic Partnerships:** Cross-border alliances (e.g., between C3 AI and Microsoft Forge; IBM’s partnerships with LTI Mindtree, Wipro, and Adobe) reveal that firms are aligning AI deployment with a full-stack approach that encompasses infrastructure, data governance, and ethical oversight.
+
+### 6.2. Economic and Geopolitical Implications
+
+- **Global Investment Trends:** Projections suggest that AI will contribute up to $15.7 trillion globally by 2030. Regional differences are evident: US companies have historically invested more heavily yet operate under a patchwork system, while the EU enforces a stringent risk-based regulatory regime that sets de facto global standards via the ‘Brussels Effect.’
+
+- **Transatlantic and International Coordination:** Initiatives such as the EU–US Trade and Technology Council and global multistakeholder alliances (including the OECD, UNESCO, and partnership frameworks emerging in emerging markets) are working to harmonize regulatory definitions, risk metrics, and compliance thresholds across jurisdictions.
+
+---
+
+## 7. Industry Case Studies and Deployment in Key Sectors
+
+### 7.1. Healthcare, Finance, and Manufacturing
+
+- **Healthcare:** Multiple institutions (e.g., Chi Mei Medical Center, Mayo Clinic) are piloting AI-driven clinical decision support systems that drastically reduce diagnostic times and improve accuracy (e.g., IDx-DR for diabetic retinopathy screening achieving 87% sensitivity and 90% specificity). These deployments are accompanied by rigorous risk assessments and compliance reviews in line with GDPR and HIPAA.
+
+- **Finance:** Banks are deploying agentic AI solutions for tasks such as fraud detection, credit risk modeling, and contract review. Multi-agent systems have been shown to improve predictive maintenance and optimize operational efficiencies, with ROI enhancements demonstrated by cost savings and streamlined workflows.
+
+- **Manufacturing:** The integration of digital twins with generative AI for predictive maintenance and quality control has yielded dramatic improvements. Case studies indicate reductions in equipment breakdowns by up to 70% and maintenance costs by 25%, driven by real-time sensor data and multi-modal AI analytics.
+
+### 7.2. Public Sector and Customer Operations
+
+- **Government:** Federal agencies are piloting AI-driven systems to enhance customer service, streamline document processing, and improve regulatory compliance. Examples include automated citizen query resolution through platforms like OpenAI’s Operator integrated with USDA and USCIS, resulting in reduced response times from 48 hours to mere minutes.
+
+- **Customer Operations:** Platforms like Zendesk and Salesforce are embedding AI agents to manage customer interactions. Detailed performance dashboards now track metrics such as automated resolution rates, escalated interactions, and KPI improvements in customer satisfaction, with iterative feedback loops ensuring continual performance tuning.
+
+---
+
+## 8. Global Trends, Future Outlook, and Recommendations
+
+### 8.1. Technical and Cost-efficiency Trends
+
+Smaller, efficient, agentic AI models such as DeepSeek are emerging as disruptive alternatives to conventional large-scale LLMs. These systems offer superior energy efficiency (up to 40% improvement over predecessors like ChatGPT), lower carbon footprints, and reduced training and inference costs. They are achieving high throughput and minimal latency, thereby democratizing access to high-performance AI while addressing environmental and economic sustainability.
+
+### 8.2. Adaptive and Hybrid Regulatory Strategies
+
+Globally, regulatory models vary widely. The EU’s centralized, binding system stands in contrast to the US’s decentralized, sector-specific approach and Asia’s varied models. Cross-border harmonization through transatlantic dialogue and global standard-setting initiatives is essential. Policymakers must remain adaptive, incorporating robust technical risk management, dynamic auditing mechanisms, and integrated governance frameworks to balance innovation with user safety and ethical oversight.
+
+### 8.3. Recommendations for Enterprises and Policymakers
+
+1. **For Enterprises**: 
+   - **Invest in Robust Integration:** Leverage modern cloud-native platforms (e.g., Snowflake, AWS SageMaker) to integrate AI agents with legacy systems, using techniques such as zero-copy cloning and service meshes for scalability and security.
+   - **Adopt Hybrid Training and RLHF Techniques:** Utilize advanced reinforcement and direct feedback methods to reduce hallucinations and improve model alignment, ensuring continuous performance improvements.
+   - **Focus on Multi-Agent Orchestration:** Develop modular, role-based agent frameworks that facilitate distributed decision-making while incorporating human-in-the-loop checkpoints for enhanced safety and explainability.
+   - **Enhance Observability and Security:** Deploy real-time monitoring tools and layered security protocols (IAM, VPC endpoints, encryption) to protect agent workflows and sensitive data.
+
+2. **For Policymakers and Regulators**:
+   - **Harmonize International Standards:** Work towards unifying regulatory frameworks across regions (e.g. EU AI Act, US guidelines, Asia’s evolving policies) to reduce compliance fragmentation and foster global innovation.
+   - **Implement Adaptive, Risk-Based Governance:** Develop dynamic regulatory models that continuously adjust to emerging AI capabilities, including clear risk thresholds, proactive auditing, and standardized evaluation metrics.
+   - **Promote Transparency and Accountability:** Mandate detailed documentation, continuous monitoring, and public registries for high-risk AI systems to ensure accountability and limit potential harms.
+
+3. **For Research and Development**:
+   - **Standardize Evaluation Methodologies:** Invest in interdisciplinary efforts to develop rigorous, reproducible benchmarks (such as HaluEval 2.0 and the LLM cluster-agent metric) for assessing factual accuracy, bias mitigation, and multi-agent orchestration efficiency.
+   - **Encourage Open-Source Innovation:** Leverage communities around frameworks like LangChain, AutoGPT, and the emerging Pydantic AI to drive agile development, reproducibility, and cross-sector collaboration.
+   - **Expand Multimodal and Hybrid Approaches:** Explore advanced methods that integrate retrieval augmented generation, graph neural networks, and neuro‑symbolic reasoning to enhance both technical performance and ethical alignment.
+
+### 8.4. Future Outlook
+
+The trajectory of agentic AI is clear: smaller, efficient AI agents are gradually shifting from experimental prototypes to mainstream tools that revolutionize operations across domains, from healthcare and finance to government and digital publishing. With global investments surging and transformative partnerships emerging, the field is moving toward a future where autonomous agents—supported by robust regulatory, technical, and governance frameworks—deliver tangible efficiencies while ensuring ethical, secure, and accountable AI deployment.
+
+The coming years will require continued interdisciplinary collaboration, iterative technical refinements, and proactive policy adjustments. The integration of advanced RLHF techniques, dynamic multi-agent coordination, and sustainable, cost-effective AI design (as exemplified by DeepSeek) are poised to redefine both the innovation landscape and regulatory practices worldwide.
+
+---
+
+## 9. Conclusion
+
+Week 7 of 2025 has been a landmark period in the evolution of AI agents, marking critical advancements in both technology and regulation. The interplay between cutting-edge LLM developments, multi-agent orchestration frameworks, and the shifting regulatory landscape underscores the complexity and dynamism of the field. As enterprise and public sectors increasingly deploy agentic AI to drive operational efficiencies and transformative business outcomes, the need for robust risk management, transparency, and adaptive governance remains paramount.
+
+By balancing innovation with stringent compliance and ethical oversight, global stakeholders are forging a path toward scalable, sustainable, and human-centered AI. The insights gathered in this report not only capture the state-of-the-art in AI agent deployment but also provide a strategic roadmap for navigating future challenges in this rapidly evolving landscape.
+
+*Prepared on 2025-02-14T14:07:54.376Z by an expert analyst based on extensive multidisciplinary research.*
+
+## Sources
+
+- https://www.littler.com/publication-press/publication/what-does-2025-artificial-intelligence-legislative-and-regulatory
+- https://www.linkedin.com/pulse/future-ai-compliance-preparing-2025-beyond-onetrust-b76mf
+- https://www.jacksonlewis.com/insights/year-ahead-2025-tech-talk-ai-regulations-data-privacy
+- https://wp.nyu.edu/compliance_enforcement/2025/02/13/the-eu-ai-act-countdown-is-over-first-wave-of-requirements-now-in-force/
+- https://www.manufacturingdive.com/news/key-regulations-2025-state-federal-ai-labor-pfas-forever-chemicals/737626/
+- https://ijcaonline.org/archives/volume186/number38/jariwala-2024-ijca-923954.pdf
+- https://www.theemployerreport.com/2024/08/illinois-joins-colorado-and-nyc-in-restricting-generative-ai-in-hr-a-comprehensive-look-at-us-and-global-laws-on-algorithmic-bias-in-the-workplace/
+- https://www.mcguirewoods.com/client-resources/alerts/2024/10/employers-beware-the-rise-of-ai-regulation-in-illinois-colorado-and-california/
+- https://businesslawreview.uchicago.edu/print-archive/comparing-eu-ai-act-proposed-ai-related-legislation-us
+- https://www.employmentlawworldview.com/illinois-enacts-new-ai-legislation-joining-colorado-as-the-only-states-regulating-algorithmic-discrimination-in-private-sector-use-of-ai-systems-us/
+- https://www.mayerbrown.com/en/insights/publications/2024/11/the-impact-of-the-eu-ai-act-on-ai-reseller-deals
+- https://cdp.cooley.com/eu-ai-act-does-it-affect-your-organization-or-not/
+- https://thoropass.com/blog/compliance/eu-ai-act/
+- https://www.hunton.com/insights/legal/the-impact-of-the-eu-ai-act-on-the-development-and-use-of-medical-devices
+- https://www.orrick.com/en/Insights/2024/10/The-Artificial-Intelligence-Act-of-the-European-Union
+- https://www.hoganlovells.com/en/publications/the-eu-ai-act-an-impact-analysis-part-2
+- https://www.morganlewis.com/pubs/2024/07/the-eu-artificial-intelligence-act-is-here-with-extraterritorial-reach
+- https://carnegieendowment.org/2024/03/05/ai-and-product-safety-standards-under-eu-ai-act-pub-91870
+- https://cetas.turing.ac.uk/publications/eu-ai-act-national-security-implications
+- https://www.brookings.edu/articles/the-eu-and-us-diverge-on-ai-regulation-a-transatlantic-comparison-and-steps-to-alignment/
+- https://www.iqvia.com/locations/emea/blogs/2024/10/eu-ai-act-heres-how-this-will-affect-your-organisation
+- https://www.crowe.com/insights/balancing-risk-and-reward-in-the-face-of-ai-regulations
+- https://www.netguru.com/blog/eu-ai-act
+- https://kennedyslaw.com/en/thought-leadership/article/2025/key-insights-into-ai-regulations-in-the-eu-and-the-us-navigating-the-evolving-landscape/
+- https://iapp.org/resources/article/top-impacts-eu-ai-act-high-risk-ai-providers/
+- https://www.sciencedirect.com/science/article/pii/S009457652400047X
+- https://technologyquotient.freshfields.com/post/102jwmk/eu-ai-act-unpacked-20-the-ai-act-and-beyond-potential-pitfalls-for-contractin
+- https://www.mayerbrown.com/en/insights/publications/2024/09/illinois-passes-artificial-intelligence-ai-law-regulating-employment-use-cases
+- https://www.lumenova.ai/blog/ai-policy-eu-vs-us-comparison/
+- https://www.sciencespo.fr/public/chaire-numerique/en/2024/10/28/californias-sb1047-vs-eu-ai-act-a-comparative-analysis-of-ai-regulation/
+- https://www.multistate.us/insider/2023/8/24/regulating-artificial-intelligence-comparing-eu-and-us-frameworks
+- https://arxiv.org/html/2410.21279v1
+- https://iapp.org/news/a/a-regulatory-roadmap-to-ai-and-privacy
+- https://www.corporatecomplianceinsights.com/state-moves-ai-regulation/
+- https://www.nccgroup.com/us/the-eu-ai-act-pioneering-the-future-of-ai-regulation/
+- https://www.cnbc.com/2024/08/01/eu-ai-act-goes-into-effect-heres-what-it-means-for-us-tech-firms.html
+- https://www.navex.com/en-us/blog/article/artificial-intelligence-and-compliance-preparing-for-the-future-of-ai-governance-risk-and-compliance/
+- https://natlawreview.com/article/ai-regulations-cross-borders-eus-influence-us-innovation-and-policy
+- https://www.navex.com/en-us/blog/article/compliance-with-the-eu-ai-act/
+- https://www.clm.com/the-ai-regulatory-puzzle-from-the-eu-to-the-u-s/
+- https://www.hertie-school.org/en/digital-governance/research/blog/detail/content/ai-governance-eu-and-us-converge-on-risk-based-approach-amid-stark-differences
+- https://sog.luiss.it/sites/sog.luiss.it/files/E.U.%20and%20U.S.%20regulatory%20approach%20on%20AI%20comparative%20perspectives_REV_v3_0.pdf
+- https://www.foley.com/insights/publications/2024/08/evolving-scope-transatlantic-ai-regulations/
+- https://www.moodys.com/web/en/us/insights/regulatory-news/may-21-24-eu-taking-steps-to-set-out-and-enforce-ai-regulations.html
+- https://www.researchgate.net/publication/384585963_A_Comparative_Analysis_of_the_EU_AI_Act_and_the_Colorado_AI_Act_Regulatory_Approaches_to_Artificial_Intelligence_Governance
+- https://www.reuters.com/legal/legalindustry/comparing-eu-us-ai-legislation-dj-vu-2020-2024-10-21/
+- https://www.lawfaremedia.org/article/a-comparative-perspective-on-ai-regulation
+- https://www.rsaconference.com/library/blog/navigating-ai-regulations-a-comparative-analysis-of-us-and-eu-frameworks
+- https://hiddenlayer.com/innovation-hub/the-eu-ai-act-a-groundbreaking-framework-for-ai-regulation/
+- https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+- https://petrieflom.law.harvard.edu/2024/05/20/from-regulation-to-innovation-the-impact-of-the-eu-ai-act-on-xr-and-ai-in-healthcare/
+- https://www.arnoldporter.com/en/perspectives/advisories/2024/11/uniting-global-ai-regulatory-frameworks
+- https://www.whitecase.com/insight-our-thinking/ai-watch-global-regulatory-tracker-united-states
+- https://bigid.com/blog/the-eu-ai-act-all-you-need-to-know-in-2024/
+- https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-april/navigating-ai-employment-bias-maze/
+- https://nquiringminds.com/ai-legal-news/Federal-AI-Policy-Changes-Heighten-Compliance-Risks-for-Employers/
+- https://news.bloomberglaw.com/daily-labor-report/ai-hiring-bias-laws-limited-by-lack-of-transparency-in-tools
+- https://resources.workable.com/tutorial/us-regulations-on-hiring-with-ai-state-by-state
+- https://www.bclplaw.com/en-US/events-insights-news/us-state-by-state-artificial-intelligence-legislation-snapshot.html
+- https://nquiringminds.com/ai-legal-news/evolving-ai-regulations-in-the-workplace-state-and-local-developments/
+- https://community.ionanalytics.com/nyc-ai-audit-law-what-five-companies-published-and-how-others-avoid-it
+- https://www.workforcebulletin.com/category/artificial-intelligence
+- https://www.law.com/newyorklawjournal/2025/02/07/ai-discrimination-and-the-10-step-bias-elimination-audit/
+- https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4873053
+- https://www.soa.org/4a1a8a/globalassets/assets/files/resources/research-report/2024/regulatory-framework-comparison-ai.pdf
+- https://www.ganintegrity.com/resources/blog/ai-governance/
+- https://www.brookings.edu/articles/regulating-general-purpose-ai-areas-of-convergence-and-divergence-across-the-eu-and-the-us/
+- https://www.shrm.org/topics-tools/employment-law-compliance/ai-employment-regulations-compliance-complicated
+- https://globalinvestigationsreview.com/guide/the-guide-compliance/third-edition/article/implementing-effective-ai-compliance-amid-evolving-regulatory-landscape
+- https://www.hunton.com/insights/publications/ai-in-hr-the-current-legal-landscape
+- https://journals.sagepub.com/doi/10.1177/00197939241278956a?icid=int.sj-full-text.similar-articles.1
+- https://www.workforcebulletin.com/states-ring-in-the-new-year-with-proposed-ai-legislation
+- https://www.lexology.com/library/detail.aspx?g=d0c88d95-695f-4ef1-913f-a4c1ca6a9d12
+- https://www.bakerdonelson.com/the-colorado-ai-act-shuffle-one-step-forward-two-steps-back
+- https://arxiv.org/html/2402.08101v1
+- https://nquiringminds.com/ai-legal-news/new-york-implements-comprehensive-ai-regulations-for-employment-decisions/
+- https://www.sciencedirect.com/science/article/pii/S2468227624002266
+- https://carnegieendowment.org/2024/03/21/envisioning-global-regime-complex-to-govern-artificial-intelligence-pub-92022
+- https://www.brookings.edu/articles/the-three-challenges-of-ai-regulation/
+- https://www.coherentsolutions.com/insights/ai-powered-data-governance-implementing-best-practices-and-frameworks
+- https://www.ibm.com/think/topics/ai-governance
+- https://deconch30.medium.com/how-ai-agents-will-reshape-data-privacy-and-algorithmic-bias-in-business-4d424279c425
+- https://www.skadden.com/insights/publications/2023/12/how-regulators-worldwide-are-addressing-the-adoption-of-ai-in-financial-services
+- https://pyxos.ai/blog/exploring-the-intersection-of-ai-and-data-governance/
+- https://www.shrm.org/topics-tools/news/talent-acquisition/nyc-outlines-compliance-requirements-ai-bias-law
+- https://www.theregister.com/2024/01/23/nyc_ai_hiring_law_ineffective/
+- https://citizensandtech.org/research/2024-algorithm-transparency-law/
+- https://houstonlawreview.org/article/74110.pdf
+- https://arxiv.org/html/2405.19699v2
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC10702934/
+- https://www.sciencedirect.com/science/article/pii/S2772485923000534
+- https://kofirm.com/artificial-intelligence-regulatory-overview-practical-considerations
+- https://ovic.vic.gov.au/privacy/resources-for-organisations/artificial-intelligence-and-privacy-issues-and-challenges/
+- https://www.scalefocus.com/blog/artificial-intelligence-and-privacy-issues-and-challenges
+- https://iapp.org/resources/article/top-impacts-eu-ai-act-leveraging-gdpr-compliance/
+- https://privacymatters.dlapiper.com/2024/04/europe-the-eu-ai-acts-relationship-with-data-protection-law-key-takeaways/
+- https://link.springer.com/article/10.1365/s43439-023-00107-9
+- https://gdprlocal.com/how-to-align-ai-with-gdpr-a-compliance-strategy/
+- https://www.europarl.europa.eu/RegData/etudes/STUD/2019/634445/EPRS_STU(2019)634445_EN.pdf
+- https://www.nature.com/articles/s41598-022-19341-y
+- https://swisscognitive.ch/2024/11/19/leveraging-ai-and-blockchain-for-privacy-and-security-in-cross-border-data-transfers/
+- https://www.sciencedirect.com/science/article/pii/S2096720923000040
+- https://www.researchgate.net/publication/385380185_Ensuring_GDPR_Compliance_in_Blockchain_Systems_for_Personal_Data_Protection
+- https://yenra.com/ai20/ethical-ai-governance-platforms/
+- https://natlawreview.com/article/difference-between-eu-and-us-ai-regulation-foreshadowing-future-litigation-ai
+- https://www.isaca.org/resources/white-papers/2024/exploring-practical-considerations-and-applications-for-privacy-enhancing-technologies
+- https://www.sciencedirect.com/science/article/pii/S0743731524000820
+- https://www.linkedin.com/pulse/trade-off-between-data-privacy-ai-performance-deep-dive-khayalian-mhlke
+- https://www.sciencedirect.com/science/article/pii/S1361841523003195
+- https://onlinelibrary.wiley.com/doi/10.1155/2020/3910250
+- https://journalofcloudcomputing.springeropen.com/articles/10.1186/s13677-024-00711-y
+- https://www.mdpi.com/2072-4292/13/11/2221
+- https://roundtable.datascience.salon/federated-learning-for-privacy-preserving-ai-an-in-depth-exploration
+- https://www.mdpi.com/1999-5903/17/1/18
+- https://www.sciencedirect.com/science/article/pii/S0167739X23003333
+- https://www.centraleyes.com/generative-ai-governance/
+- https://www.lawfaremedia.org/article/using-ai-to-improve-the-government-without-violating-the-privacy-act
+- https://www.onetrust.com/blog/navigating-the-eu-ai-act/
+- https://www.sciencedirect.com/science/article/pii/S0267364924001328
+- https://www.oecd.org/en/publications/emerging-privacy-enhancing-technologies_bf121be4-en.html
+- https://www.dataguard.com/blog/growing-data-privacy-concerns-ai/
+- https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/03/emerging-privacy-enhancing-technologies_a6bdf3cb/bf121be4-en.pdf
+- https://www.dhs.gov/sites/default/files/2023-12/23_1222_st_risks_mitigation_strategies.pdf
+- https://www.mdpi.com/1424-8220/23/3/1151
+- https://www.researchgate.net/publication/376539286_Identifying_and_Mitigating_the_Security_Risks_of_Generative_AI
+- https://www.researchgate.net/publication/381315686_Comparative_Analysis_of_Generative_AI_Risks_in_the_Public_Sector?_share=1
+- https://arxiv.org/html/2502.08651v1
+- https://documents1.worldbank.org/curated/en/809611616042736565/pdf/Artificial-Intelligence-in-the-Public-Sector-Maximizing-Opportunities-Managing-Risks.pdf
+- https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4811924_code6236618.pdf?abstractid=4811924
+- https://arxiv.org/html/2406.08695v1
+- https://www.nature.com/articles/s41599-024-03560-x
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC7611759/
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC11379845/
+- https://www.steptoe.com/a/web/mdWt44Hg7mmGXDAcLsAr7n/comparative-table-on-approaches-to-ai-regulation-in-the-eu-us-and-uk-2.pdf
+- https://fpf.org/wp-content/uploads/2024/09/FINAL-State-AI-Legislation-Report-webpage.pdf
+- https://www.researchgate.net/publication/381404246_Global_AI_Governance_in_Healthcare_A_Cross-Jurisdictional_Regulatory_Analysis
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC10930608/
+- https://www.nature.com/articles/s41746-024-01221-6
+- https://link.springer.com/chapter/10.1007/978-3-031-73741-1_11
+- https://www.twobirds.com/en/insights/2024/global/legal-and-operational-perspectives-on-ai-applications
+- https://www.linkedin.com/pulse/harmonizing-data-ai-governance-do-dr-irina-steenbeek-3e9ze
+- https://www.forbes.com/councils/forbestechcouncil/2025/01/31/where-the-ai-regulatory-landscape-is-heading/
+- https://www.flastergreenberg.com/newsroom-articles-understanding-colorado-landmark-ai-legislation-impact-business.html
+- https://wp.nyu.edu/compliance_enforcement/2024/06/20/recently-enacted-ai-law-in-colorado-yet-another-reason-to-implement-an-ai-governance-program/
+- https://www.credo.ai/blog/eu-ai-act-faq
+- https://hdsr.mitpress.mit.edu/pub/yixt9mqu
+- https://www.mwe.com/resource/healthcare-ai-resource-center/
+- https://www.alvarezandmarsal.com/insights/ai-ethics-part-two-ai-framework-best-practices
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC8844981/
+- https://www.reedsmith.com/en/perspectives/2024/08/navigating-the-complexities-of-ai-regulation-in-china
+- https://www.weforum.org/stories/2025/01/transforming-industries-with-ai-lessons-from-china/
+- https://www.elastic.co/blog/artificial-intelligence-regulation-asia-comparative-analysis
+- https://carnegieendowment.org/2023/07/10/china-s-ai-regulations-and-how-they-get-made-pub-90117
+- https://itif.org/publications/2024/08/26/how-innovative-is-china-in-ai/
+- https://www.globallegalinsights.com/practice-areas/ai-machine-learning-and-big-data-laws-and-regulations/singapore/
+- https://airc.nist.gov/docs/NIST.AI.100-5.Global-Plan.ipd.pdf
+- https://www.dentons.com/en/insights/articles/2025/january/10/ai-trends-for-2025-disputes-and-managing-liability
+- https://www.gatekeeperhq.com/blog/vendor-and-contract-management-ai
+- https://www.prevalent.net/blog/global-ai-regulations-and-tprm/
+- https://www.gatekeeperhq.com/blog/eu-artifical-intelligence-act
+- https://www.rand.org/pubs/research_reports/RRA3243-3.html
+- https://www.pwc.com/us/en/services/consulting/cybersecurity-risk-regulatory/library/tech-regulatory-policy-developments/eu-ai-act.html
+- https://www.isaca.org/resources/white-papers/2024/understanding-the-eu-ai-act
+- https://www.rapidinnovation.io/post/ai-agent-contract-risk-predictor
+- https://www.eipa.eu/blog/beyond-the-buzzwords-a-practical-guide-to-ai-procurement-with-model-clauses-and-gdpr/
+- https://www.asrcfederal.com/recommendations-for-implementing-secure-ai/
+- https://secureframe.com/blog/ai-in-risk-and-compliance
+- https://trustarc.com/resource/data-privacy-age-ai-whats-changing/
+- https://www.jdsupra.com/legalnews/what-does-the-2025-artificial-4599728/
+- https://www.crowell.com/en/insights/publications/guidance-on-managing-the-risks-of-ai-discrimination
+- https://www.holisticai.com/blog/compare-nyc-and-new-jersey-bias-audit-laws
+- https://www.brookings.edu/articles/why-new-york-city-is-cracking-down-on-ai-in-hiring/
+- https://www.womeninai.co/post/bias-audit-laws-where-are-we-now
+- https://www.sciencedirect.com/science/article/pii/S1871678424005636
+- https://deloitte.wsj.com/cio/how-eu-ai-act-may-accelerate-compliance-regime-for-u-s-enterprises-450c809c
+- https://info.aiim.org/aiim-blog/the-convergence-of-ai-data-privacy-and-information-governance
+- https://www.dataversity.net/ai-technologies-and-the-data-governance-framework-navigating-legal-implications/
+- https://digitalregulation.org/3004297-2/
+- https://www.worldprivacyforum.org/2023/12/new-report-risky-analysis-assessing-and-improving-ai-governance-tools/
+- https://yourdataconnect.com/wp-content/uploads/2024/08/AI_Governance_Comprehensive_Sept_2024.pdf
+- https://wjlta.com/2024/07/09/a-comparative-analysis-of-ai-governance-frameworks/
+- https://www.accessprivacy.com/AccessPrivacy/media/AccessPrivacy/Content/Comparison-of-AIDA-and-EU-AI-Act-key-provisions.pdf
+- https://elevateconsult.com/insights/a-pathway-to-ai-governance-and-risk-management-for-2025-trends-and-controls/
+- https://www.jdsupra.com/legalnews/2024-privacy-ai-cybersecurity-year-in-8761350/
+- https://www.sciencedirect.com/science/article/pii/S0166497222001705
+- https://www.responsible.ai/demystifying-the-ai-assurance-landscape/
+- https://deloitte.wsj.com/cio/how-ai-governance-can-adapt-to-a-fragmented-regulatory-landscape-2671f597
+- https://www.itprotoday.com/ai-machine-learning/ai-trends-and-predictions-2025-from-industry-insiders
+- https://www.simplifai.ai/blogs-and-news/how-agentic-ai-will-reshape-insurance-in-2025
+- https://www.linkedin.com/pulse/weeks-latest-ai-industry-updates-february-4-2025-symphonyai-3sfoc
+- https://www.csrwire.com/press_releases/817491-ai-2025-five-defining-themes
+- https://www.rapidinnovation.io/post/the-rise-of-digital-labor-ai-agents-as-the-new-workforce
+- https://www.codiste.com/essential-kpi-for-track-ai-agent-deployment-success
+- https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work
+- https://rapidinnovation.io/post/ai-agent-real-time-customer-experience-enhancer
+- https://bytebridge.medium.com/ai-agents-current-status-industry-impact-and-job-market-implications-f8f1ccd0e01f
+- https://www.kdnuggets.com/real-roi-ai-2025
+- https://www.linkedin.com/pulse/roi-enterprise-ai-measuring-success-beyond-hype-pradeep-sanyal-dektc
+- https://www.multimodal.dev/post/ai-kpis
+- https://cloud.google.com/transform/gen-ai-kpis-measuring-ai-success-deep-dive
+- https://www.netsuite.com/portal/resource/articles/erp/operational-kpis-metrics.shtml
+- https://sloanreview.mit.edu/projects/the-future-of-strategic-measurement-enhancing-kpis-with-ai/
+- https://ai.gov/wp-content/uploads/2023/10/2023%20Consolidated%20AI%20Use%20Case%20Inventory%20(PUBLIC).csv
+- https://www.researchgate.net/publication/388678591_AI_Maturity_Assessment_and_Alignment_AIMAA_-_A_Comprehensive_Framework_for_Evaluating_and_Benchmarking_AI_Adoption_in_Organizations
+- https://www.responsible.ai/responsible-ai-institute-introduces-raise-pathways-to-meet-the-urgent-need-for-ai-governance-benchmarks-and-maturity-achievement-badges/
+- https://ai.nejm.org/doi/full/10.1056/AI-S2400177
+- https://www.linkedin.com/pulse/accelerating-ai-maturity-strategies-successful-enterprise-kaba-2m3ce
+- https://nationalcioreview.com/articles-insights/ai-integration-in-digital-transformation-foundations-for-success/
+- https://aimresearch.co/generative-ai/outsystems-introduces-ai-agent-builder-to-revolutionize-low-code-application-development
+- https://www.mdpi.com/2071-1050/16/5/1790
+- https://www.pwc.com/us/en/tech-effect/ai-analytics/ai-predictions.html
+- https://www.healthtechdigital.com/what-next-for-ai-in-2025/
+- https://www.zdnet.com/article/25-of-enterprises-using-ai-will-deploy-ai-agents-by-2025/
+- https://www.paloaltonetworks.com/cyberpedia/ai-risk-management-framework
+- https://www.fairly.ai/blog/policies-platform-and-choosing-a-framework
+- https://www.barradvisory.com/resource/managing-ai-risk-frameworks/
+- https://www.ibm.com/think/insights/ai-risk-management
+- https://stoneturn.com/insight/preparing-for-the-ai-agent-revolution/
+- https://iaeme.com/MasterAdmin/Journal_uploads/IJCET/VOLUME_16_ISSUE_1/IJCET_16_01_069.pdf
+- https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf
+- https://medium.com/@kanerika/from-pilots-to-production-the-explosive-growth-of-generative-ai-in-enterprises-ae734f2e3082
+- https://www.sandtech.com/insight/scaling-ai-from-experimentation-to-enterprise-wide-transformation/
+- https://newsroom.ibm.com/blog-In-2025,-partners-will-speed-the-shift-of-enterprise-AI-projects-from-pilot-to-production
+- https://www.informatica.com/resources/articles/ai-governance-explained.html
+- https://medium.com/@davidsweenor/ai-oversight-implementing-governance-policies-for-a-competitive-advantage-401439c710fd
+- https://rtslabs.com/ai-governance-framework
+- https://www.linkedin.com/pulse/unlock-ais-full-potential-right-framework-mark-lynd-ksbyc
+- https://www.researchgate.net/publication/388832453_AI_Transformation_in_Automotive_OEMs_A_Blueprint_for_Enterprise_Adoption_ROI_and_Ethical_Governance/download
+- https://www.willowtreeapps.com/insights/quantifying-opportunity-value-of-agentic-ai
+- https://www.linkedin.com/pulse/harnessing-agentic-ai-regulated-industries-servicenow-justice-aj--eeirc
+- https://www.foley.com/insights/publications/2024/12/intersection-agentic-ai-emerging-legal-frameworks/
+- https://liatbenzur.com/2024/09/03/agentic-ai-what-it-means-for-your-business-and-why-it-matters/
+- https://outshift.cisco.com/blog/2025-rating-technology-predictions
+- https://insights.tryspecter.com/ai-agents-ecosystem-2025-landscape/
+- https://medium.com/@senthilraja.v/2025-the-future-of-ai-agents-in-enterprise-software-architecture-e677314af0a4
+- https://www.linkedin.com/pulse/future-agentic-ai-years-products-publications-2025-jason-shearer-iv7jc
+- https://www.techpolicy.press/interoperable-agentic-ai-unlocking-the-full-potential-of-ai-specialization/
+- https://carlrannaberg.medium.com/state-of-ai-agents-in-2025-5f11444a5c78
+- https://medium.com/@changshan/thoughts-on-anthropics-newly-released-mcp-protocol-9c3397cb1337
+- https://www.willowtreeapps.com/craft/is-anthropic-model-context-protocol-right-for-you
+- https://www.unite.ai/breaking-data-barriers-can-anthropics-model-context-protocol-enhance-ai-performance/
+- https://smythos.com/ai-agents/multi-agent-systems/agent-communication-in-multi-agent-systems/
+- https://smythos.com/ai-agents/agent-architectures/agent-communication-languages-and-middleware/
+- https://www.researchgate.net/publication/221038643_Communication_Protocols_in_Multi-agent_Systems_A_Development_Method_and_Reference_Architecture
+- https://arxiv.org/html/2412.17114v3
+- https://medium.com/@oracle_43885/how-ai-agents-and-ai-modular-foundation-models-are-transforming-business-ecosystems-and-supply-9c8ad16765b7
+- https://medium.com/@oracle_43885/bridging-the-gap-how-ai-agents-and-generative-foundation-models-are-revolutionizing-artificial-fd3ff06eb2cb
+- https://shelf.io/blog/the-evolution-of-ai-introducing-autonomous-ai-agents/
+- https://arxiv.org/abs/2412.17114
+- https://www.sciencedirect.com/science/article/pii/S2773207X24001386
+- https://www.linkedin.com/pulse/measuring-roi-ai-role-responsible-enterprise-decision-making-prvyc
+- https://kamexa.ai/measuring-roi-autonomous-ai/
+- https://www.moveworks.com/us/en/resources/blog/measuring-ai-investment-roi
+- https://www.linkedin.com/pulse/how-measure-roi-ai-agents-bella-liu-p3ioc
+- https://techsee.com/blog/the-roi-of-agentic-ai-practical-strategy-and-kpis/
+- https://medium.com/elaia/agentic-ai-the-next-r-evolution-384bd77f5c57
+- https://www.insightpartners.com/ideas/state-of-the-ai-agent-ecosystem-use-cases-and-learnings-for-technology-builders-and-buyers/
+- https://www.rapidinnovation.io/post/what-is-the-cost-of-building-ai-agents
+- https://arxiv.org/html/2502.05439v1
+- https://medium.com/@mcraddock/the-ai-agent-revolution-navigating-the-future-of-human-machine-partnership-8516952cd94a
+- https://kpmg.com/ch/en/insights/artificial-intelligence/iso-iec-42001.html
+- https://naaia.ai/iso-42001-with-naaia/
+- https://www.osler.com/en/insights/updates/the-role-of-iso-iec-42001-in-ai-governance/
+- https://www.ansi.org/standards-news/all-news/2023/12/12-27-23-using-ai-responsibly-us-leads-efforts-to-develop-iso-iec-42001
+- https://blog.rsisecurity.com/webinar-recap-building-an-ai-governance-framework-with-iso-42001/
+- https://cloudsecurityalliance.org/blog/2025/01/29/how-can-iso-iec-42001-nist-ai-rmf-help-comply-with-the-eu-ai-act
+- https://www.secureframe.com/blog/iso-42001
+- https://www.sciencedirect.com/science/article/pii/S0167404824002694
+- https://www.isms.online/iso-42001/everything-you-need-to-know-so-far-about-the-eu-ai-act/
+- https://www.centraleyes.com/iso-42001-impact-ai-development/
+- https://www.credo.ai/blog/iso-iec-42001-promote-trust-through-implementing-standards-for-responsible-ai
+- https://aiexpert.network/ai-at-kpmg/
+- https://kpmg.com/au/en/home/media/press-releases/2024/10/kpmg-becomes-first-company-in-the-world-to-achieve-certification-to-ai-management-system-standard-by-bsi.html
+- https://linfordco.com/blog/iso-42001-it-security/
+- https://www.ey.com/en_us/insights/ai/iso-42001-paving-the-way-for-ethical-ai
+- https://www.techuk.org/resource/ai-adoption-case-study-kpmg-s-ava-gen-ai-tool-creates-useable-outputs-improves-efficiences-and-reduces-risk.html
+- https://digitaldefynd.com/IQ/agentic-ai-best-practices-building-user-trust/
+- https://www.cxnetwork.com/artificial-intelligence/articles/how-to-use-agentic-ai-in-line-with-the-eu-ai-act
+- https://www.cogentinfo.com/resources/the-rise-of-agentic-ai-an-essential-skill-for-2025-and-beyond
+- https://telnyx.com/resources/ai-compliance
+- https://www.dataguidance.com/opinion/eu-navigating-ai-act-comparative-analysis-eu-ai-act
+- https://www.linkedin.com/pulse/shaping-ai-governance-comparative-look-eu-act-us-nist-isabell-sheang-rfqxf
+- https://blog.rsisecurity.com/comparing-nist-ai-rmf-with-other-ai-risk-management-frameworks/
+- https://www.boozallen.com/insights/velocity/the-age-of-agentic-ai.html
+- https://lucinity.com/blog/understanding-agentic-ai-the-future-of-autonomous-workflows
+- https://www.productiveedge.com/blog/demystifying-agentic-ai-how-ai-agents-can-change-healthcare-efficiency-now
+- https://digitaldefynd.com/IQ/agentic-ai-in-healthcare-case-studies/
+- https://substack.com/home/post/p-156446532?utm_campaign=post&utm_medium=web
+- https://www.tenable.com/blog/cybersecurity-snapshot-ai-security-tips-generative-ai-roi-01-31-2025
+- https://www.secureworld.io/industry-news/cybersecurity-predictions-for-2025
+- https://arxiv.org/html/2412.17149v1
+- https://www.linkedin.com/pulse/architecting-ai-agents-enterprise-scalability-vasu-rao-yvwkc
+- https://medium.com/@yugank.aman/top-agentic-ai-design-patterns-for-architecting-ai-systems-397798b44d5c
+- https://codeninjaconsulting.com/blog/agentic-ai-for-enterprises
+- https://www.reddit.com/r/MachineLearning/comments/1cy1kn9/d_ai_agents_too_early_too_expensive_too_unreliable/
+- https://www.lyzr.ai/blog/agentic-workflows/
+- https://www.researchgate.net/publication/388628787_AGENTIC_AI_REDEFINING_AUTONOMY_FOR_COMPLEX_GOAL-DRIVEN_SYSTEMS
+- https://solutionsarchitecture.medium.com/the-agentic-ai-revolution-transforming-software-as-a-service-a7c915172b33
+- https://mykubert.com/blog/from-golden-paths-to-agentic-ai-a-new-era-of-kubernetes-management/
+- https://shelf.io/blog/fairness-metrics-in-ai/
+- https://www.linkedin.com/pulse/survey-agentic-ai-multi-agent-systems-multimodal-anand-ramachandran-q9yhe
+- https://medium.com/@bijit211987/enterprise-ai-strategy-transforming-business-with-ai-agents-and-advanced-models-540cd2ed4b49
+- https://www.computer.org/publications/tech-news/community-voices/autonomous-ai-agents/
+- https://medium.com/@noel.B/pragmatic-ai-automation-balancing-efficiency-risk-d39c85333704
+- https://blogs.microsoft.com/blog/2025/01/21/microsoft-and-openai-evolve-partnership-to-drive-the-next-phase-of-ai/
+- https://blogs.microsoft.com/blog/2025/02/05/https-blogs-microsoft-com-blog-2024-11-12-how-real-world-businesses-are-transforming-with-ai/
+- https://www.shelpuk.com/the-ai-compass-newsletter/microsoft-extends-lead-with-largest-ai-agent-ecosystem-transforming-enterprises
+- https://natlawreview.com/article/what-expect-2025-ai-legal-tech-and-regulation-65-expert-predictions
+- https://federalnewsnetwork.com/commentary/2025/01/securing-the-future-5-priorities-for-defense-and-intelligence-leaders-to-safely-integrate-autonomous-ai/
+- https://www.frost.com/growth-opportunity-news/security/top-growth-opportunities-in-cybersecurity-and-commercial-and-public-security-for-2025-cim-pb/
+- https://www.defense.gov/News/News-Stories/Article/Article/3578219/dod-releases-ai-adoption-strategy/
+- https://www.reisystems.com/lean-principles-in-action-accelerating-dods-operational-agility-and-quality/
+- https://www.americanbar.org/groups/law_practice/resources/law-technology-today/2025/when-legal-tech-comes-of-age/
+- https://aibusiness.com/automation/ai-set-to-transform-legal-services-in-2025
+- https://www.sciencedirect.com/science/article/pii/S0893395224001893
+- https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders
+- https://www.zoom.com/en/blog/zoom-total-cost-of-ownership/
+- https://www.linkedin.com/pulse/maximizing-roi-tco-ai-strategic-approach-chris-seferlis-ymrye
+- https://semianalysis.com/ai-cloud-tco-model/
+- https://www.elibrary.imf.org/view/journals/001/2024/065/article-A001-en.xml
+- https://www.saastr.com/how-to-price-and-package-ai-saas-products/
+- https://www.sciencedirect.com/science/article/pii/S026840122400029X
+- https://blog.boostcommerce.net/posts/boost-ai-predictive-bundles-manual-product-bundles
+- https://docs.datadoghq.com/integrations/azure_openai/
+- https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy
+- https://www.datadoghq.com/blog/monitor-azure-openai-with-datadog/
+- https://learn.microsoft.com/en-us/azure/architecture/ai-ml/openai/architecture/log-monitor-azure-openai
+- https://learn.microsoft.com/en-us/answers/questions/2156197/best-practices-for-securing-azure-openai-with-conf
+- https://dir.texas.gov/sites/default/files/2025-02/TX-RAMP%20Certified%20Cloud%20Products%202.3.25.xlsx
+- https://www.linkedin.com/pulse/state-ai-agents-2025-balancing-optimism-reality-vu-ha-keftc
+- https://www.nutanix.com/theforecastbynutanix/news/ai-and-cloud-native-technologies-proliferate-in-2025-enterprise-cloud-index
+- https://www.atomicwork.com/itsm/best-ai-agent-frameworks
+- https://www.restack.io/p/enterprise-ai-system-integration-strategies-answer-ai-migration-strategies-legacy-systems-cat-ai
+- https://www.galileo.ai/blog/how-to-test-ai-agents-effectively
+- https://writesonic.com/blog/ai-agents-best-practices
+- https://www.ibm.com/think/insights/ai-agent-ethics
+- https://www.skan.ai/blogs/how-to-measure-the-impact-of-ai-agents
+- https://medium.com/@yugank.aman/multi-agent-orchestration-overview-aa7e27c4e99e
+- https://superbo.ai/ai-agent-orchestration-enabling-intelligent-multi-agent-systems/
+- https://www.moveworks.com/us/en/resources/blog/agentic-ai-the-next-evolution-of-enterprise-ai
+- https://www.forbes.com/sites/janakirammsv/2024/11/04/why-agent-orchestration-is-the-new-enterprise-integration-backbone-for-the-ai-era/
+- https://medium.com/@kzamania/a-comparative-study-of-ai-agent-orchestration-frameworks-f61cd49b687e
+- https://microsoft.github.io/autogen/0.2/blog/
+- https://www.akira.ai/blog/microsoft-autogen-with-multi-agent-system
+- https://techcommunity.microsoft.com/blog/azure-ai-services-blog/business-in-a-box-applying-autogen-and-multi-agent-systems-to-an-enterprise-cont/4150736
+- https://futurumgroup.com/insights/what-makes-microsofts-autonomous-agents-a-game-changer-for-workers/
+- https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless
+- https://smythos.com/ai-agents/ai-agent-development/agent-communication-and-interaction-protocols/
+- https://media.defense.gov/2024/apr/15/2003439257/-1/-1/0/csi-deploying-ai-systems-securely.pdf
+- https://www.sciencedirect.com/science/article/pii/S1566253523001136
+- https://afscsoftware.dso.mil/crossTalkIssues/AI_Part_1_May_2024.pdf
+- https://www.360factors.com/blog/six-strategies-ai-risk-and-compliance/
+- https://www.entrepreneur.com/science-technology/how-ai-is-revolutionizing-compliance-strategies/485973
+- https://www.compliance.ai/solution/
+- https://www.decisionfocus.com/enterprise-compliance-engine
+- https://aisera.com/blog/agentic-ai-security/
+- https://www.rapidinnovation.io/post/ai-agents-for-compliance-reporting
+- https://sprinto.com/blog/ai-cybersecurity-companies/
+- https://www.researchgate.net/publication/385277305_A_Quantitative_Assessment_of_the_Impact_of_Automated_Incident_Response_on_Cloud_Services_Availability
+- https://www.microsoft.com/en-us/research/project/autogen/
+- https://www.qmulos.com/case-study-financial-agency/
+- https://guptadeepak.com/crewai-vs-autogen-choosing-the-right-ai-agent-framework/
+- https://www.linkedin.com/pulse/ai-regulatory-intelligence-compliance-vasu-rao-dsg7c
+- https://pharmasug.org/proceedings/2024/SD/PharmaSUG-2024-SD-397.pdf
+- https://www.leewayhertz.com/ai-for-regulatory-compliance/
+- https://www.finreg-e.com/compliance-services/regulatory-horizon-scanning/
+- https://amplyfi.com/solutions/regulatory-intelligence/
+- https://www.rapidinnovation.io/post/ai-agents-in-asset-tokenization-the-new-digital-ownership
+- https://aethir.com/blog-posts/integrating-ai-and-blockchain-for-decentralized-applications
+- https://medium.com/liveplexmetaverseecosystem/blockchain-in-compliance-streamlining-audits-and-reporting-1af090af4909
+- https://www.blockchain-council.org/blockchain/how-blockchain-and-ai-can-work-together/
+- https://www.a3logics.com/blog/ai-with-blockchain/
+- https://oxfordabstracts.com/blog/top-ai-conferences-to-attend-in-2024/
+- https://events.business.columbia.edu/event/ai-agents-conference
+- https://m.economictimes.com/tech/artificial-intelligence/2025-will-bring-advancements-in-autonomous-ai-agents-that-can-plan-execute-and-adapt-tasks-with-little-human-intervention-moodys-ratings/articleshow/117262383.cms
+- https://blogs.nvidia.com/blog/generative-ai-predictions-2025-humanoids-agents/
+- https://securityjournalamericas.com/2025-the-year-of-ai-agents/
+- https://openai.com/index/introducing-deep-research/
+- https://www.linkedin.com/pulse/weekly-ai-agents-report-sergii-makarevych-z42vf
+- https://dl.acm.org/doi/10.1145/3716628
+- https://podtail.com/no/podcast/this-week-in-machine-learning-ai-podcast/training-data-locality-and-chain-of-thought-reason/
+- https://sanjmo.medium.com/2025-enterprise-data-ai-trends-agents-platforms-and-moonshots-0010c8b4d1f3
+- https://arxiv.org/pdf/2502.02649?ref=machine.news
+- https://www.linkedin.com/pulse/ai-2025-board-directors-survival-guide-steven-wolfe-pereira--bncgc
+- https://arxiv.org/html/2501.06322v1
+- https://aaai.org/conference/aaai/aaai-25/
+- https://www.researchgate.net/publication/388686331_The_AI_Agent_Index
+- https://aaai.org/conference/aaai/aaai-25/aaai-25-main-technical-call-for-papers/
+- https://isolutions.medium.com/language-model-agents-in-2025-897ec15c9c42
+- https://www.sciencedirect.com/science/article/pii/S0092867424010705
+- https://www.rapidinnovation.io/post/fine-tuning-large-language-models-llms
+- https://www.aitimejournal.com/shankar-narayanan-sgs-principal-architect-at-microsoft-ai-and-automation-integration-bridging-ai-with-cloud-open-source-vs-proprietary-ai-responsible-ai-ai-in-data-platforms-llm-risks/51667/
+- https://scale.com/blog/synthetic-data-fine-tuning-llms
+- https://ux.stackexchange.com/questions/1795/when-to-use-icons-vs-icons-with-text-vs-just-text-links
+- https://maze.co/blog/measure-usability-metrics/
+- https://www.lyssna.com/blog/quantitative-usability-testing/
+- https://www.nngroup.com/articles/icon-testing/
+- https://www.nngroup.com/articles/icon-usability/
+- https://www.nngroup.com/articles/usability-metrics/
+- https://stackoverflow.com/questions/490293/whats-the-best-tradeoff-between-text-and-icons-on-buttons
+- https://webtango.berkeley.edu/papers/thesis/chap2.pdf
+- https://www.nobledesktop.com/learn/front-end-web-development/enhancing-user-experience-with-effective-ui-design-principles
+- https://www.tandfonline.com/doi/full/10.1080/00140139.2024.2418949
+- https://blog.pixelfreestudio.com/best-practices-for-using-icons-and-illustrations-in-design-systems/
+- https://digital.accessibility.princeton.edu/how/design
+- https://dl.acm.org/doi/10.1145/3411763.3441324
+- https://arxiv.org/pdf/2101.02936
+- https://hqsoftwarelab.com/blog/ai-and-ar-vr/
+- https://www.brandxr.io/how-ai-is-enhancing-immersive-experiences
+- https://www.nature.com/articles/s41598-024-61514-4
+- https://www.researchgate.net/publication/384554855_Enhancing_User_Experience_in_VR_Environments_through_AI-Driven_Adaptive_UI_Design
+- https://www.wandr.studio/blog/user-experience-design-integrating-vr-xr-and-ai
+- https://www.researchgate.net/publication/220302428_Usability_of_Graphical_Icons_in_the_Design_of_Human-Computer_Interfaces
+- https://www.hhs.gov/sites/default/files/research-based-web-design-and-usability-guidelines_book.pdf
+- https://www.tandfonline.com/doi/full/10.1080/00140139.2024.2440767?af=R
+- https://www.researchgate.net/publication/3188421_Design_and_Development_of_Multidevice_User_Interfaces_through_Multiple_Logical_Descriptions
+- https://www.researchgate.net/publication/375684619_Evaluating_the_User_Interface_and_Usability_Approaches_for_E-Learning_Systems
+- https://medium.com/@ronitmalhotraofficial/user-interface-interaction-design-simplified-3-n-4c8414abf584
+- https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php
+- https://london.theaisummit.com/
+- https://www.summit.ai/
+- https://london.theaisummit.com/conference-agenda
+- https://www.xenonstack.com/blog/ai-conferences-in-2025
+- https://london.theaisummit.com/ai-summit-event-series
+- https://www.linkedin.com/pulse/daily-news-ai-agents-key-updates-0211-github-agent-mode-schwoebel-t0cde
+- https://newyork.theaisummit.com/conference-agenda-2024
+- https://ismg.events/summit/ai-virtual-summit-2025-americas/
+- https://london.theaisummit.com/ai-summit-london
+- https://orq.ai/blog/what-is-chain-of-thought-prompting
+- https://www.kmworld.com/KMAISummit/2025/Program.aspx
+- https://iotmktg.com/intelligent-thinking-ai-summit/
+- https://www.sciencedirect.com/science/article/pii/S2405844024045936
+- https://www.mdpi.com/2079-9292/13/17/3509
+- https://london.theaisummit.com/the-ai-summit-london-2024
+- https://artificialintelligence.novelticsconferences.com/
+- https://engine.com/business-travel-guide/biggest-ai-expos-events-conferences-2025
+- https://aiindex.stanford.edu/wp-content/uploads/2024/05/HAI_AI-Index-Report-2024.pdf
+- https://arxiv.org/html/2501.02725v1
+- https://arxiv.org/abs/2210.04319
+- https://www.sciencedirect.com/science/article/pii/S0040162524000477
+- https://aiindex.stanford.edu/wp-content/uploads/2023/04/HAI_AI-Index-Report_2023.pdf
+- https://www.leewayhertz.com/ai-use-cases-and-applications/
+- https://www.mckinsey.com/~/media/mckinsey/featured%20insights/artificial%20intelligence/notes%20from%20the%20frontier%20modeling%20the%20impact%20of%20ai%20on%20the%20world%20economy/mgi-notes-from-the-ai-frontier-modeling-the-impact-of-ai-on-the-world-economy-september-2018.ashx
+- https://www2.deloitte.com/us/en/pages/deloitte-analytics/articles/advancing-human-ai-collaboration.html
+- https://www.linkedin.com/pulse/benchmarking-autonomous-ai-agents-new-class-iq-task-raymond-omahc
+- https://www.sciencedirect.com/science/article/pii/S2941198X24000411
+- https://onlinelibrary.wiley.com/doi/10.1155/2023/8676366
+- https://www.accessnewswire.com/newsroom/en/healthcare-and-pharmaceutical/black-book-research-releases-first-industry-wide-evaluation-of-ai-driv-982488
+- https://aaai.org/conference/aaai/aaai-25/tutorial-and-lab-list/
+- https://info.aiim.org/aiim-blog/ai-automation-trends-2024-insights-2025-outlook
+- https://vmblog.com/archive/2025/01/10/nvidia-2025-predictions-industry-data-lakes-and-agentic-ai-blueprints-lead-ai-charge-in-2025-nvidia-executive-predictions.aspx
+- https://technologymagazine.com/articles/nvidia-predictions-ai-infrastructure-set-to-shift-in-2025
+- https://www.datacenterfrontier.com/cloud/article/55253151/8-trends-that-will-shape-the-data-center-industry-in-2025
+- https://ir.supermicro.com/news/news-details/2025/Supermicro-Ramps-Full-Production-of-NVIDIA-Blackwell-Rack-Scale-Solutions-with-NVIDIA-HGX-B200/default.aspx
+- https://medium.com/@krtarunsingh/top-nvidia-gpus-for-ai-in-2025-unleashing-the-future-of-machine-learning-21da3349ce27
+- https://www.chaincatcher.com/en/article/2161117
+- https://developer.nvidia.com/blog/nvidia-dgx-cloud-introduces-ready-to-use-templates-to-benchmark-ai-platform-performance/
+- https://venturebeat.com/ai/applied-digital-is-harnessing-the-nvidia-accelerated-computing-platform-to-power-the-next-generation-of-ai-workloads/
+- https://www.constellationr.com/blog-news/insights/nvidia-huang-lays-out-big-picture-blackwell-gpu-platform-nvlink-switch-chip
+- https://developer.nvidia.com/blog/decentralizing-ai-with-a-liquid-cooled-development-platform-by-supermicro-and-nvidia/
+- https://www.datacenterfrontier.com/cooling/article/33015771/strategic-ai-partnerships-ease-liquid-cooling-technology-uptake-in-high-density-data-centers
+- https://nvidianews.nvidia.com/news/computer-industry-ai-factories-data-centers
+- https://www.datacenterfrontier.com/sustainability/article/33016851/dcfs-top-10-data-center-white-papers-of-2023
+- https://www.bigdatawire.com/this-just-in/nvidia-to-present-innovations-at-hot-chips-that-boost-data-center-performance-and-energy-efficiency/
+- https://www.datacenterdynamics.com/en/opinions/cooling-solutions-for-ai-workloads-in-evolving-data-centers/
+- https://www.datacenterfrontier.com/machine-learning/article/55265866/how-ais-transformative-impact-on-data-centers-is-driving-unprecedented-industry-growth-innovation-and-global-expansion
+- https://www.linkedin.com/pulse/ai-evolution-liquid-cooled-data-centers-andre-ripla-pgcert-txeyc
+- https://www.sciencedirect.com/science/article/abs/pii/S1359431121009352
+- https://learn-more.supermicro.com/data-center-stories/direct-liquid-cooling-vs-traditional-air-cooling-in-servers
+- https://www.researchgate.net/publication/354187143_A_comparative_study_between_air_cooling_and_liquid_cooling_thermal_management_systems_for_a_high-energy_lithium-ion_battery_module
+- https://www.techtarget.com/searchdatacenter/feature/Liquid-cooling-vs-air-cooling-in-the-data-center
+- https://www.sciencedirect.com/science/article/abs/pii/S2352152X24001518
+- https://pubs.rsc.org/en/content/articlehtml/2023/ma/d3ma00299c
+- https://www.researchgate.net/publication/373398336_PCMmetal_foam_and_microchannels_hybrid_thermal_management_system_for_cooling_of_Li-ion_battery
+- https://dl.acm.org/doi/10.1007/s00158-017-1733-1
+- https://aaai.org/wp-content/uploads/2025/01/AAAI-25-Poster-Schedule.pdf
+- https://pubs.rsc.org/ro/content/articlehtml/2025/sc/d4sc03921a
+- https://aaai.org/wp-content/uploads/2025/01/AAAI-25-Poster-Schedule_2025-01-22_Thursday-Only.pdf
+- https://www.amazon.science/conferences-and-events/aaai-2025
+- https://ojs.aaai.org/index.php/AAAI/issue/view/591
+- https://www.vktr.com/events/conference/the-39th-annual-aaai-conference-on-artificial-intelligence-philadelphia-2025/
+- https://aaai.org/conference/aaai/aaai-25/aaai-25-bridge-list/
+- https://aaai.org/conference/aaai/aaai-25/main-technical-track/
+- https://arxiv.org/html/2502.09242v1
+- https://openreview.net/group?id=AAAI.org/2025/Workshop/AI4Research&referrer=%5BHomepage%5D(%2F)
+- https://arxiv.org/pdf/2502.09100
+- https://www.sciencedirect.com/science/article/pii/S1566253523002129
+- https://aaai.org/conference/aaai/aaai-25/iaai-25-program/
+- https://aaai.org/conference/aaai/aaai-25/iaai-25-call/
+- https://ai100.stanford.edu/gathering-strength-gathering-storms-one-hundred-year-study-artificial-intelligence-ai100-2021-1/sq7
+- https://aaai.org/aaai-24-conference/aaai-24-tutorial-and-lab-list/
+- https://aiperspectives.springeropen.com/articles/10.1186/s42467-024-00016-5
+- https://link.springer.com/article/10.1007/s40860-024-00231-1
+- https://machine-learning-made-simple.medium.com/addressing-one-of-the-biggest-misunderstandings-in-ai-4d6278213a46
+- https://www.arxiv.org/list/cs.AI/recent?skip=159&show=500
+- https://arxiv.org/html/2501.09686v1
+- https://openreview.net/forum?id=oqsQbn4XfT
+- https://arxiv.org/html/2412.02980v2
+- https://www.researchgate.net/publication/385107506_On_the_Diversity_of_Synthetic_Data_and_its_Impact_on_Training_Large_Language_Models
+- https://arxiv.org/abs/2410.15226
+- https://www.researchgate.net/publication/384218065_On_LLMs-Driven_Synthetic_Data_Generation_Curation_and_Evaluation_A_Survey
+- https://medium.com/@rupeshit/the-future-of-ai-agents-in-healthcare-by-2025-a-samd-experts-perspective-110bed6b6848
+- https://www.scworld.com/feature/ai-to-change-enterprise-security-and-business-operations-in-2025
+- https://fpf.org/blog/minding-mindful-machines-ai-agents-and-data-protection-considerations/
+- https://blogs.nvidia.com/blog/industry-ai-predictions-2025/
+- https://www.thoughtspot.com/data-trends/dashboard/healthcare-kpis-and-metrics-dashboard-examples
+- https://www.netsuite.com/portal/resource/articles/erp/healthcare-kpis.shtml
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC11241174/
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC11433247/
+- https://medium.com/@TheImmersiveNurse/kpis-tracking-digital-healthcare-innovation-and-transformation-5935bd611c5f
+- https://transcend.io/blog/big-tech-ai-governance
+- https://newsroom.ibm.com/2025-01-22-e-collaborates-with-ibm-to-launch-pioneering-end-to-end-ai-governance-platform
+- https://radicaldatascience.wordpress.com/2025/02/
+- https://www.ibm.com/think/insights/top-ai-agent-frameworks
+- https://www.gartner.com/doc/reprints?id=1-2JE62VKD&ct=241119&st=sb
+- https://www.novusasi.com/blog/open-source-ai-vs-proprietary-ai-pros-and-cons-for-developers
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC10928809/
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC10667100/
+- https://standards.ieee.org/initiatives/autonomous-intelligence-systems/standards/
+- https://www.sciencedirect.com/science/article/pii/S0933365724001039/pdf
+- https://www.brookings.edu/articles/how-onc-can-strengthen-its-hti-1-rule-to-ensure-transparency-fairness-and-equity-in-ai/
+- https://hortoninternational.com/addressing-bias-and-fairness-in-ai-driven-hiring-practices/
+- https://www.dataforce.ai/services/bias-mitigation
+- https://www.technewsworld.com/story/ai-in-2025-generative-tech-robots-and-emerging-risks-179587.html
+- https://action.deloitte.com/insight/4278/c-suite-antes-up-for-ai-risk-strategy
+- https://cloudsecurityalliance.org/blog/2024/11/20/5-big-cybersecurity-laws-you-need-to-know-about-ahead-of-2025
+- https://www.aztechit.co.uk/blog/cyber-security-predictions
+- https://medium.com/@johnnathans/emerging-cybersecurity-standards-what-compliance-will-look-like-in-2025-efc6922a22b4
+- https://www.nist.gov/itl/ai-risk-management-framework
+- https://www.paloaltonetworks.com/cyberpedia/mitre-sensible-regulatory-framework-atlas-matrix
+- https://www.auditboard.com/blog/future-proofing-businesses-against-emerging-risks-with-autonomous-irm-and-ai-agents/
+- https://www.computerweekly.com/blog/Data-Matters/The-journey-to-Agentic-AI-impact-in-2025
+- https://medium.com/@carsten.krause/by-carsten-krause-january-28-2025-deepseeks-r1-model-a-paradigm-shift-for-the-ai-industry-and-455b198da159
+- https://www.forbes.com/sites/bernardmarr/2024/09/06/agentic-ai-the-next-big-breakthrough-thats-transforming-business-and-technology/
+- https://www.linkedin.com/pulse/rise-ai-agents-hrs-need-literacy-chris-long-eweac
+- https://www.ey.com/en_no/insights/ai/case-study-how-ey-transformed-with-ai
+- https://www.linkedin.com/pulse/transforming-future-rise-agentic-ai-enterprises-2-renato-c5gvf
+- https://www.inma.org/blogs/product-initiative/post.cfm/the-era-of-ai-agents-is-upon-us-what-does-this-mean-for-news
+- https://reutersinstitute.politics.ox.ac.uk/journalism-media-and-technology-trends-and-predictions-2025
+- https://www.artificialintelligence-news.com/
+- https://manufacturingdigital.com/articles/google-cloud-taking-gen-ai-in-manufacturing-beyond-the-hype
+- https://www.newscaststudio.com/2025/02/13/industry-insights-ais-impact-on-personalization-monetization-and-advertising/
+- https://cointelegraph.com/news/ai-powered-agents-to-reinvent-digital-brand-identity-and-fan-engagement
+- https://www.linkedin.com/pulse/ai-agents-impact-publishers-state-of-digital-publishing-jalqf
+- https://thefinancialbrand.com/news/artificial-intelligence-banking/why-ai-agents-may-be-the-tech-to-finally-deliver-on-personalization-186592
+- https://www.arcxp.com/2024/11/06/ai-in-media-transforming-audience-engagement-with-personalization-and-community/
+- https://www.bloomreach.com/en/blog/ai-personalization-in-customer-experience
+- https://www.cassandra.app/resources/maximizing-roi-with-ai-powered-ad-campaigns
+- https://www.cmswire.com/customer-experience/how-to-measure-and-generate-roi-with-ai-an-actionable-guide/
+- https://www.saleshub.ca/ai-powered-dynamic-ad-insertion-transform-your-campaign-performance-today/
+- https://www.nobledesktop.com/learn/digital-marketing/maximizing-marketing-roi-with-ai-revolution
+- https://www.admetrics.io/en/post/artificial-intelligence-advertising
+- https://digitalschoolofmarketing.co.za/digital-marketing-blog/ai-for-real-time-analytics-and-decision-making/
+- https://www.accenture.com/us-en/insights/software-platforms/unlock-share-ad-opportunity-ai
+- https://www.intelemark.com/blog/role-of-ai-in-customer-retention-strategy/
+- https://arena.im/website-monetization/how-to-determine-ad-integration-roi/
+- https://medium.com/@arnaud_24087/how-ai-is-transforming-content-marketing-roi-measuring-and-maximizing-impact-935b5f91c958
+- https://www.techtarget.com/searchcio/tip/5-challenges-with-blockchain-adoption-and-how-to-avoid-them
+- https://vorecol.com/blogs/blog-what-are-the-key-challenges-in-implementing-blockchain-technology-in-supply-chains-78407
+- https://www.linkedin.com/pulse/challenges-solutions-token-development-z0azc
+- https://humansmart.com.mx/en/blogs/blog-what-are-the-key-challenges-of-integrating-blockchain-technology-into-existing-business-processes-54435
+- https://rejolut.com/blog/7-challenges-face-blockchain-and-how-to-overcome-them/
+- https://crustlab.com/blog/blockchain-interoperability/
+- https://eprint.iacr.org/2021/537.pdf
+- https://astrakode.medium.com/blockchain-interoperability-exploring-layer-2-swaps-bridges-and-interconnected-ecosystems-6d1c6ef50fc0
+- https://moldstud.com/articles/p-blockchain-interoperability-trends-for-future-projects
+- https://www.tandfonline.com/doi/full/10.1080/17517575.2023.2296647
+- https://www.sciencedirect.com/science/article/pii/S2772662223001844
+- https://www2.deloitte.com/us/en/pages/operations/articles/blockchain-supply-chain-innovation.html
+- https://www.reinhartlaw.com/pdf/entries/Navigating-Regulatory-Uncertainty-with-Blockchain-Implementations.pdf?v=2024-12-12T17:04:06-06:00
+- https://tech.wustl.edu/tech-summary/blockchain-based-algorithms-for-secure-collaborative-risk-assessment-and-decision-making/
+- https://digitalcontentnext.org/blog/2024/02/26/4-ways-publishers-can-leverage-ai-to-improve-monetization/
+- https://www.pugpig.com/2024/03/22/how-publishers-can-respond-to-the-radical-shifts-in-search-caused-by-googles-ai-and-tiktok/
+- https://admonsters.com/how-publishers-are-using-ai-tools-to-achieve-their-ad-and-rev-ops-goals/
+- https://integranxt.com/blog/integrating-ai-in-content-editing-a-game-changer-for-publishers/
+- https://publishdrive.com/how-to-leverage-ai-in-book-publishing.html
+- https://www.unite.ai/what-you-need-to-know-about-openais-operator/
+- https://medium.com/@julio.pessan.pessan/openais-operator-the-ai-game-changer-that-will-redefine-automation-and-integration-475c722fa5bf
+- https://dansasser.me/posts/how-openai-projects-revolutionizes-scalable-ai-workflows-and-persistent-storage-efficiency/
+- https://www.androidpolice.com/openai-operator-launch-beats-google-project-mariner/
+- https://www.tandfonline.com/doi/full/10.1080/09540091.2024.2353630
+- https://www.linkedin.com/pulse/key-seo-trend-2025-rise-conversational-ai-search-eamonn-vy6ne
+- https://www.cmswire.com/digital-marketing/will-chatgpt-search-change-everything-in-seo/
+- https://www.singlegrain.com/seo/zero-click-seo/
+- https://aimclear.com/using-ai-for-seo-discoverability-22-techniques-top-seo-thought-leaders-to-follow/
+- https://nogood.io/2024/08/23/searchgpt-seo/
+- https://xpert.digital/en/seo-ki-integration/
+- https://www.tandfonline.com/doi/full/10.1080/17512786.2025.2458608?src=exp-la
+- https://journals.sagepub.com/doi/full/10.1177/01622439211030007
+- https://www.sciencedirect.com/science/article/pii/S0148296325000219/pdf?ref=hackernoon.com
+- https://www.enr.com/articles/59364-embracing-ais-transformative-power-has-massive-potential-for-design-and-construction
+- https://www.lse.ac.uk/media-and-communications/polis/JournalismAI/Collab-Team-5
+- https://medcitynews.com/2024/11/ai-powered-insights-for-personalized-customer-experiences-the-art-of-data-driven-engagement/
+- https://www.sciencedirect.com/science/article/pii/S0268401224000318
+- https://www.socialinsider.io/blog/ai-analytics/
+- https://www.researchgate.net/publication/379299506_Enhancing_audience_engagement_through_ai-powered_social_media_automation
+- https://www.researchgate.net/publication/386451832_Comparative_Analysis_of_Traditional_vs_AI-Driven_Customer_Engagement_Approaches
+- https://www.linkedin.com/pulse/comparing-gen-ai-architectures-enterprise-kpi-optimization-gqjdc
+- https://uxcam.com/blog/top-50-mobile-app-kpis/
+- https://www.healthit.gov/sites/default/files/2025-01/2025%20HHS%20AI%20Strategic%20Plan_Full_508.pdf
+- https://dragonflyai.co/resources/blog/how-ai-boosts-conversion-rates-with-predictive-attention-insights
+- https://blog.blendee.com/en/i-a-and-customer-churn-rate-turning-risk-into-opportunity/
+- https://dokumen.pub/artificial-intelligence-for-business-an-implementation-guide-containing-practical-and-industry-specific-case-studies-1032415088-9781032415086.html
+- https://presidencyuniversity.in/wp-content/uploads/2023/11/NCRACIT-2023.pdf
+- https://www.stgregoriosudaipur.ac.in/pdf/commerce/business-intelligence-and-analytics.pdf
+- https://www.twipemobile.com/press-start-to-engage-what-publishers-can-learn-from-the-gaming-industry/
+- https://www.tandfonline.com/doi/full/10.1080/21670811.2024.2323655
+- https://www.copyright.com/blog/ccc-launches-collective-ai-license/
+- https://www.forbes.com/sites/billrosenblatt/2024/07/18/the-media-industrys-race-to-license-content-for-ai/
+- https://variety.com/vip/why-generative-ai-companies-will-pay-content-owners-and-licensing-models-that-will-emerge-1235944577/
+- https://www.altmansolon.com/insights/ai-digital-content-monetization
+- https://www.copyright.com/blog/content-sharing-in-the-ai-era-why-compliance-gaps-persist/
+- https://www.sciencedirect.com/science/article/pii/S0268401223000233
+- https://scholarlykitchen.sspnet.org/2024/09/04/make-attribution-mandatory-in-ai-licensing/
+- https://www.brookings.edu/articles/strengthening-international-cooperation-on-ai/
+- https://www.researchgate.net/publication/371154816_Navigating_the_legal_landscape_of_AI_copyright_a_comparative_analysis_of_EU_US_and_Chinese_approaches
+- https://www.researchgate.net/publication/388537564_Saudi_Arabia's_Generative_AI_Strategy_Legal_Challenges_in_Intellectual_Property_Protection
+- https://alvaroliuzzi.medium.com/ai-journalism-a-guide-to-integrating-artificial-intelligence-into-media-and-newsrooms-9bcfad14ee6e
+- https://www.inma.org/blogs/value-content/post.cfm/2025-newsroom-trends-point-toward-team-unification-ai-integration
+- https://www.forbes.com/councils/forbestechcouncil/2024/08/16/best-practices-for-leaders-integrating-ai-into-the-workplace/
+- https://www.cjr.org/tow_center_reports/artificial-intelligence-in-the-news.php/
+- https://reutersinstitute.politics.ox.ac.uk/journalism-media-and-technology-trends-and-predictions-2024
+- https://www.weforum.org/stories/2024/09/ai-governance-trends-to-watch/
+- https://www.outsystems.com/tech-hub/app-dev/vendor-lock-in/
+- https://arxiv.org/abs/2501.15802
+- https://www.keystone.ai/newsroom
+- https://ai.cms.gov/assets/CMS_AI_Playbook.pdf
+- https://cbs4indy.com/business/press-releases/ein-presswire/782913266/agii-integrates-adaptive-ai-for-next-level-decentralized-autonomy/
+- https://insidecybersecurity.com/sites/insidecybersecurity.com/files/documents/2021/mar/cs2021_0042.pdf
+- https://www.scottmadden.com/insight/from-pilot-to-production-deploying-gen-ai-applications/
+- https://cloud.google.com/transform/kpis-for-gen-ai-why-measuring-your-new-ai-is-essential-to-its-success
+- https://www.ibm.com/think/topics/ai-scaling
+- https://www.arionresearch.com/blog/ai-and-legacy-systems-crafting-an-it-strategy-for-seamless-integration
+- https://www.xenonstack.com/blog/ai-edge-analytics
+- https://medium.com/snowflake/enterprise-ai-and-legacy-systems-a-double-edged-sword-on-the-path-to-modernization-9f54e1da1fab
+- https://medium.com/@bijit211987/beyond-mlops-llmops-and-the-future-e1f5d1c6f28c
+- https://www.linkedin.com/pulse/traditional-mlops-vs-generative-ai-navigating-neal-akyildirim-5vkme
+- https://medium.com/mlops-io/generative-ai-with-mlops-challenges-and-best-practices-c5109dd2de19
+- https://www.digitalocean.com/resources/articles/ai-hallucination
+- https://data.world/blog/ai-hallucination/
+- https://www.researchgate.net/publication/385660357_Transforming_Regulatory_Compliance_Architecting_AI-Driven_Solutions_for_Security_Adaptability_and_Ethical_Governance
+- https://intervision.com/blog-integrating-genai-with-legacy-infrastructure/
+- https://www.confluent.io/learn/legacy-system-integration/
+- https://www.thoughtworks.com/en-us/insights/blog/generative-ai/Leveraging-GenAI-to-modernize-enterprise-systems-integration
+- https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies
+- https://therix.ai/blog/integrating-genai-into-legacy-systems-challenges-and-solutions
+- https://cloud.google.com/architecture/rag-capable-gen-ai-app-using-vertex-ai
+- https://onspring.com/business-function/grc/4-best-practices-for-managing-generative-ai-risk/
+- https://ai.wharton.upenn.edu/white-paper/artificial-intelligence-risk-governance/
+- https://www.enterpriseaiworld.com/Articles/Editorial/Features/Generative-AI-Risk-Management-Frameworks-and-Best-Practices-163783.aspx
+- https://www.sciencedirect.com/science/article/pii/S0148296324000468
+- https://www.researchgate.net/publication/385696184_Navigating_integrity_and_innovation_Case_studies_of_generative_AI_integration_from_an_Arts_Faculty
+- https://www.paloaltonetworks.com/cyberpedia/ai-governance
+- https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722
+- https://us.nttdata.com/en/blog/2024/july/understanding-ai-governance-in-2024
+- https://www.euaiact.com/blog/eu-ai-act-enterprise-guide-compliance
+- https://www.darkreading.com/cyber-risk/risk-strategies-drawn-from-the-eu-ai-act
+- https://www.onetrust.com/resources/operationalizing-the-eu-ai-act-with-onetrust-a-playbook-for-implementation-white-paper/
+- https://www.grcworldforums.com/the-future-of-ai-in-governance-risk-and-compliance/9690.article
+- https://www.xenonstack.com/blog/generative-ai-manufacturing
+- https://dataforest.ai/blog/multimodal-ai-training-neural-networks-for-a-unified-understanding
+- https://www.tredence.com/blog/generative-ai-in-manufacturing
+- https://neurons-lab.com/article/multimodal-ai-use-cases-the-next-opportunity-in-enterprise-ai/
+- https://blog.siemens.com/2024/10/harnessing-generative-ai-for-predictive-maintenance/
+- https://press.siemens.com/global/en/pressrelease/generative-artificial-intelligence-takes-siemens-predictive-maintenance-solution-next
+- https://www.rockwellautomation.com/en-us/company/news/blogs/AI-predictive-maintenance.html
+- https://appinventiv.com/blog/ai-in-manufacturing/
+- https://www.mdpi.com/2413-4155/6/4/60
+- https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-forward/digital-twins-and-generative-ai-a-powerful-pairing
+- https://www.mdpi.com/2673-2688/5/4/98
+- https://www.sciencedirect.com/science/article/pii/S1110016824016776
+- https://katprotech.com/ai-in-trade-promotions-vs-traditional-methods-a-detailed-roi-comparison/
+- https://sensemore.io/the-key-factors-impacting-roi-in-predictive-maintenance/?srsltid=AfmBOoqkyyyqcPP8kZNsRBPE84pNkHQ0VqkUc3FlrIP0wZM_1d4SkU1u
+- https://acerta.ai/blog/predictive-quality-better-investment-than-predictive-maintenance/
+- https://www.researchgate.net/figure/Comparative-analysis-of-AI-based-vs-traditional-logistics-systems_tbl1_386077377
+- https://www.sciencedirect.com/science/article/pii/S2590123023007727
+- https://www.researchgate.net/publication/388122620_AI-Enhanced_Predictive_Maintenance_Systems_for_Industrial_Equipment_Developing_Machine_Learning_Models_to_Forecast_Failures_Optimize_Maintenance_Schedules_and_Minimize_Downtime
+- https://advance.sagepub.com/doi/full/10.22541/au.172172848.85394455/v1
+- https://www.mdpi.com/1424-8220/22/1/13
+- https://www.linkedin.com/pulse/how-ai-improving-predictive-maintenance-manufacturing-desh-urs-4pzcc
+- https://blog.premai.io/improving-roi-ml-generative-ai-integration-strategies/
+- https://aws.amazon.com/blogs/industries/the-transformative-impact-of-generative-ai-in-industrial-manufacturing-at-hannover-messe-2024/
+- https://www.sciencedirect.com/science/article/pii/S2095809924003734
+- https://www.researchgate.net/publication/386083132_Generative_AI_in_Manufacturing_A_Review_of_Innovations_Challenges_and_Future_Prospects
+- https://www.multimodal.dev/post/how-to-identify-ai-use-cases-for-your-business
+- https://kanerika.com/blogs/generative-ai-in-enterprises/
+- https://www.sciencedirect.com/science/article/pii/S0007850624000283
+- https://arxiv.org/html/2412.14056v1
+- https://www.researchgate.net/publication/386219183_Strategic_Use_of_AI_in_Multimodal_Edge_Environments_Leveraging_Artificial_Intelligence_for_Enhanced_Performance_Real-Time_Analytics_and_Scalability_in_Distributed_Resource-_Constrained_Systems
+- https://ajithp.com/2025/01/01/ai-hardware-innovations-gpus-tpus-and-emerging-neuromorphic-and-photonic-chips-driving-machine-learning/
+- https://arxiv.org/html/2306.15552v2
+- https://www.sciencedirect.com/science/article/pii/S2772949425000026
+- https://www.sciencedirect.com/topics/computer-science/multimodal-data-fusion
+- https://dl.acm.org/doi/10.1145/3649447
+- https://arxiv.org/html/2502.07855v1
+- https://ieeexplore.ieee.org/iel7/4156126/4358093/09645245.pdf
+- https://arxiv.org/html/2408.01319v1
+- https://www.sciencedirect.com/science/article/pii/S1566253523003561
+- https://www.deepset.ai/zeit-online-case-study
+- https://www.quora.com/How-is-generative-AI-affecting-the-news-media-and-digital-publishing-platforms
+- https://www.researchgate.net/publication/383137190_AI-Driven_Personalization_in_Digital_Marketing_Effectiveness_and_Ethical_Considerations
+- https://journals.sagepub.com/doi/10.1177/21582440231210759
+- https://www.newscaststudio.com/2025/02/11/leveraging-ai-for-faster-and-more-effective-personalization/
+- https://www.sciencedirect.com/science/article/pii/S0893395224002667
+- https://lumenalta.com/insights/ethical-considerations-of-ai
+- https://www.holisticai.com/blog/what-is-ai-bias-risks-mitigation-strategies
+- https://www.captechu.edu/blog/ethical-considerations-of-artificial-intelligence
+- https://www.sciencedirect.com/science/article/pii/S0019850123001566
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC10250563/
+- https://www.sciencedirect.com/science/article/pii/S277250302400032X
+- https://www.brookings.edu/articles/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/
+- https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1270.pdf
+- https://www.sciencedirect.com/science/article/pii/S2542660523003712
+- https://link.springer.com/article/10.1007/s10462-022-10246-w
+- https://medium.com/@hassaanidrees7/real-time-machine-learning-harnessing-ai-for-instant-decision-making-ccbb71b76cd9
+- https://www.seekr.com/human-in-the-loop-in-an-autonomous-future/
+- https://nuclearnetwork.csis.org/automating-the-ooda-loop-in-the-age-of-ai/
+- https://www.holisticai.com/blog/human-in-the-loop-ai
+- https://arxiv.org/html/2408.12548v2
+- https://www.sciencedirect.com/science/article/pii/S2666389924002332
+- https://fadel.com/whitepaper-the-transformative-role-of-artificial-intelligence-in-the-publishing-industry/
+- https://www.linkedin.com/pulse/case-studies-successful-generative-ai-adoption-techstack-limited-0u8nf
+- https://www.mdpi.com/2073-431X/13/7/168
+- https://www.vktr.com/digital-marketing/breakthrough-generative-ai-marketing-use-cases-you-should-know/
+- https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier
+- https://www.linkedin.com/pulse/ml-day-7-generative-ai-action-real-world-case-shanthi-kumar-v--ewnoc
+- https://kanerika.com/blogs/generative-ai-for-marketing/
+- https://www.cmswire.com/digital-marketing/how-ai-in-marketing-impacts-all-stages-of-the-funnel/
+- https://journals.sagepub.com/doi/10.1177/27523543241288818
+- https://www.preprints.org/manuscript/202411.2157/v1
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC10879008/
+- https://cloud.google.com/blog/topics/public-sector/5-ai-trends-shaping-the-future-of-the-public-sector-in-2025
+- https://www.crn.com/news/ai/2025/solution-providers-prepare-for-2025-s-ai-agent-era
+- https://www.euronews.com/next/2025/01/05/whats-in-store-for-ai-in-2025-heres-what-chatbots-and-consulting-experts-say
+- https://www.forbes.com/councils/forbestechcouncil/2024/08/15/ai-hallucinations-how-can-businesses-mitigate-their-impact/
+- https://www.pymnts.com/artificial-intelligence-2/2024/the-perils-of-ai-hallucinations-businesses-grapple-with-unreliable-outputs/
+- https://forum.effectivealtruism.org/posts/fsxQGjhYecDoHshxX/i-read-every-major-ai-lab-s-safety-plan-so-you-don-t-have-to
+- https://aiindex.stanford.edu/wp-content/uploads/2024/04/HAI_2024_AI-Index-Report.pdf
+- https://time.com/6985504/openai-google-deepmind-employees-letter/
+- https://arxiv.org/html/2407.01557v1
+- https://assets.anthropic.com/m/983c85a201a962f/original/Alignment-Faking-in-Large-Language-Models-full-paper.pdf
+- https://www.mdpi.com/2227-7080/13/2/51
+- https://arxiv.org/pdf/2405.10632
+- https://www.researchgate.net/publication/383395776_The_Path_to_Superintelligence_A_Critical_Analysis_of_OpenAI's_Five_Levels_of_AI_Progression
+- https://arxiv.org/html/2403.16527v2
+- https://sendbird.com/blog/nlp-chatbot-hallucinations
+- https://arxiv.org/html/2412.15264v3
+- https://www.researchgate.net/publication/387321582_ReXTrust_A_Model_for_Fine-Grained_Hallucination_Detection_in_AI-Generated_Radiology_Reports
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC10960211/
+- https://www.sciencedirect.com/science/article/pii/S2405844024168867
+- https://dl.acm.org/doi/10.1145/3626314
+- https://www.faa.gov/media/82891
+- https://aventior.com/ai-and-ml/understanding-hallucinations-in-ai-examples-and-prevention-strategies/
+- https://www.tines.com/blog/humans-in-the-loop-of-ai/
+- https://www.sciencedirect.com/science/article/pii/S107158192500028X
+- https://arxiv.org/html/2501.11782v1
+- https://www.leewayhertz.com/hybrid-ai/
+- https://arxiv.org/html/2408.05141v1
+- https://www.researchgate.net/publication/368795547_From_Anecdotal_Evidence_to_Quantitative_Evaluation_Methods_A_Systematic_Review_on_Evaluating_Explainable_AI
+- https://www.linkedin.com/pulse/advancing-retrieval-augmented-generation-rag-future-ai-ramachandran-ffsve
+- https://arxiv.org/html/2412.20468v1
+- https://arxiv.org/html/2412.12004v2
+- https://www.sciencedirect.com/science/article/pii/S2095809924007239
+- https://aclanthology.org/2024.naacl-long.219.pdf
+- https://github.com/azminewasi/Awesome-LLMs-ICLR-24
+- https://www.solaresearch.org/events/lak/lak25/accepted-papers/
+- https://github.com/tmgthb/Autonomous-Agents
+- https://arxiv.org/html/2412.15660v1
+- https://www.afrl.af.mil/Portals/90/Documents/RI/AFRL-2025%20VFRP%20Research%20Topics%20-%20v11.pdf?ver=TSVWLq1MmtewjXRMTtP5_g%3D%3D
+- https://www.sapien.io/blog/the-importance-of-reinforcement-learning-from-human-feedback-for-data-labeling
+- https://www.slideshare.net/slideshow/agentic-ai-scalable-responsible-deployment-of-ai-agents-in-the-enterprise/275312980
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC10606429/
+- https://www.labellerr.com/blog/reinforcement-learning-from-human-feedback/
+- https://arxiv.org/abs/2306.01693
+- https://www.sapien.io/blog/what-is-reinforcement-learning-with-human-feedback-rlhf
+- https://computing.mit.edu/wp-content/uploads/2023/06/Transforming-Human-Interactions-with-AI-via-Reinforcement-Learning-with-Human-Feedback-RLHF.pdf
+- https://hackernoon.com/the-role-of-rlhf-in-mitigating-bias-and-improving-ai-model-fairness
+- https://arxiv.org/abs/2501.13727
+- https://kili-technology.com/large-language-models-llms/exploring-reinforcement-learning-from-human-feedback-rlhf-a-comprehensive-guide
+- https://arxiv.org/html/2408.03562v1
+- https://www.sciencedirect.com/science/article/pii/S0010482524002737
+- https://www.v7labs.com/blog/data-labeling-tools
+- https://arxiv.org/html/2309.00267v3
+- https://neurips.cc/virtual/2024/poster/96739
+- https://arxiv.org/html/2501.17030v1
+- https://www.researchgate.net/publication/386534799_Refining_Intelligence_A_Comparative_Study_of_Reinforcement_Fine-Tuning_and_Supervised_Fine-Tuning_in_Advancing_AI_Models
+- https://iclr.cc/virtual/2024/events/spotlight-posters
+- https://www.linkedin.com/pulse/integrating-ai-agents-enterprise-applications-darryl-carlton-oiv3c
+- https://www.ciodive.com/news/Snowflake-Cortex-AI-Agents-Anthropic-Claude/739989/
+- https://www.brainforge.ai/resources/13-critical-features-of-enterprise-grade-ai-agent-builders
+- https://kafkai.com/en/blog/google-cloud-ai-vs-aws-ai-a-comprehensive-comparison/
+- https://smythos.com/ai-agents/comparison/
+- https://c4scale.com/blog/comparing-aws-ai-and-google-cloud-ai-a-technical-engineers-guide-to-selecting-the-right-enterprise-ai-platform/
+- https://www.snowflake.com/en/blog/ai-data-agents-snowflake-cortex/
+- https://dir.texas.gov/sites/default/files/2022-06/TX-RAMP%20Certified%20Products.6.27.22.xlsx
+- https://www.anthropic.com/customers/snowflake
+- https://solutionsreview.com/data-management/data-management-news-for-the-week-of-february-14-updates-from-astronomer-ataccama-snowflake-more/
+- https://www.snowflake.com/en/blog/ai-roi-data-challenges-snowflake-partners/
+- https://www.irejournals.com/formatedpaper/1706841.pdf
+- https://philarchive.org/rec/SELSMF
+- https://www.snowflake.com/en/blog/migration-success-stories-core-digital-navex/
+- https://www.secoda.co/learn/snowflake-clone-table
+- https://medium.com/@bodagala.gsai2205/unlocking-the-power-of-snowflake-a-deep-dive-into-time-travel-and-zero-copy-cloning-7301d7047712
+- https://www.teksystems.com/en/insights/article/snowflake-migration-best-practices-lift-and-shift-versus-platform-modernization
+- https://www.beyondkey.com/blog/snowflake-use-cases/
+- https://www.acceldata.io/guide/increase-your-snowflake-roi
+- https://www.acceldata.io/case-studies
+- https://www.acceldata.io/snowflake
+- http://www.shawnewallace.com/2024-12-09-ai-in-your-architecture/
+- https://medium.com/@anand94523/generative-architecture-twins-gat-the-next-frontier-of-llm-driven-enterprise-architecture-ca38a1b0697e
+- https://www.infoq.com/articles/application-integration-service-mesh/
+- https://medium.com/microservices-in-practice/microservices-layered-architecture-88a7fc38d3f1
+- https://www.researchgate.net/publication/381692510_LEVERAGING_MICROSERVICES_ARCHITECTURE_WITH_AI_AND_ML_FOR_INTELLIGENT_APPLICATIONS
+- https://ballerina.io/use-cases/microservices/
+- https://cloudnativenow.com/topics/container-ecosystems/wso2-expands-integration-framework-options/
+- https://www.sciencedirect.com/science/article/pii/S2772503024000021
+- https://arxiv.org/abs/2409.12504
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC10780414/
+- https://www.avolutionsoftware.com/use-cases/digital-twin/
+- https://www.toobler.com/blog/digital-twin-implementation
+- https://aws.amazon.com/blogs/machine-learning/build-agentic-ai-solutions-with-deepseek-r1-crewai-and-amazon-sagemaker-ai/
+- https://blog.gopenai.com/building-multi-agent-llm-systems-with-pydanticai-framework-a-step-by-step-guide-to-create-ai-1d4fe9ba25ad
+- https://medium.com/towards-data-science/applied-llm-quantisation-with-aws-sagemaker-analytics-gov-ab210bd6697d
+- https://aws.amazon.com/blogs/big-data/use-deepseek-with-amazon-opensearch-service-vector-database-and-amazon-sagemaker/
+- https://github.com/aws-samples/sagemaker-genai-hosting-examples/blob/main/Deepseek/DeepSeek-R1-Llama8B-LMI-TGI-Deploy.ipynb
+- https://huggingface.co/cognitivecomputations/DeepSeek-R1-AWQ/discussions/3
+- https://docs.aws.amazon.com/sagemaker/latest/dg/large-model-inference-container-docs.html
+- https://aws.amazon.com/blogs/machine-learning/deploy-large-models-at-high-performance-using-fastertransformer-on-amazon-sagemaker/
+- https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-launches-the-updated-inference-optimization-toolkit-for-generative-ai/
+- https://discuss.huggingface.co/t/deploying-fine-tune-falcon-40b-with-qlora-on-sagemaker-inference-error/46841
+- https://aws.amazon.com/blogs/machine-learning/design-multi-agent-orchestration-with-reasoning-using-amazon-bedrock-and-open-source-frameworks/
+- https://smythos.com/ai-agents/comparison/smythos-vs-crewai-report/
+- https://nordlayer.com/blog/aws-security-best-practices/
+- https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-create-vpc.html
+- https://stackoverflow.com/questions/63331430/aws-vpc-per-environment-or-single-vpc-with-multiple-subnets-for-different-envir
+- https://www.paulmduvall.com/ai-agents-for-aws-security-businesses/
+- https://medium.com/@onkarmishra/aws-re-invent-2024-pioneering-the-future-of-generative-ai-and-enterprise-solutions-537891e5a23d
+- https://aws.amazon.com/solutions/automations/security-orchestration-automation-response/
+- https://www.xenonstack.com/blog/multi-agent-systems-with-aws
+- https://aws.amazon.com/blogs/security/implementing-least-privilege-access-for-amazon-bedrock/
+- https://medium.com/@amjadraza24/comparative-analysis-of-agentic-ai-frameworks-navigating-the-future-of-autonomous-systems-0c2fb5b4912f
+- https://www.turing.com/resources/ai-agent-frameworks
+- https://www.relari.ai/blog/ai-agent-framework-comparison-langgraph-crewai-openai-swarm
+- https://oyelabs.com/langgraph-vs-crewai-vs-openai-swarm-ai-agent-framework/
+- https://medium.com/@aydinKerem/which-ai-agent-framework-i-should-use-crewai-langgraph-majestic-one-and-pure-code-e16a6e4d9252
+- https://www.galileo.ai/blog/mastering-agents-langgraph-vs-autogen-vs-crew
+- https://ai.plainenglish.io/building-multi-agent-llm-systems-with-pydanticai-framework-a-step-by-step-guide-to-create-ai-5782508e2894
+- https://www.researchgate.net/publication/386083531_A_Comparative_Study_of_AI_Agent_Orchestration_Frameworks
+- https://arxiv.org/html/2407.12165v1
+- https://fortune.com/2025/02/12/openai-deepresearch-humanity-last-exam/
+- https://www.hindustantimes.com/technology/openais-deep-research-can-complete-26-of-humanity-s-last-exam-what-is-it-and-what-does-it-mean-101739355881687.html
+- https://scale.com/blog/humanitys-last-exam-results
+- https://medium.com/@cognidownunder/openais-operator-vs-anthropic-s-computer-use-the-ai-agents-that-might-just-put-your-intern-out-of-56ec0e69ee82
+- https://www.restack.io/p/ai-benchmarking-answer-anthropic-vs-openai-cat-ai
+- https://www.technologyreview.com/2025/01/23/1110484/openai-launches-operator-an-agent-that-can-use-a-computer-for-you/
+- https://www.techradar.com/computing/artificial-intelligence/openais-deep-research-smashes-records-for-the-worlds-hardest-ai-exam-with-chatgpt-o3-mini-and-deepseek-left-in-its-wake
+- https://www.silamir.com/en/insight/from-autonomous-agents-to-d-ia-teams/
+- https://www.linkedin.com/pulse/comparative-analysis-multi-agentic-frameworks-crewai-vs-sai-panyam-vbmrc
+- https://www.linkedin.com/pulse/building-multi-agent-ai-systems-comparative-analysis-openai-pandiya-afqve
+- https://www.computer.org/publications/tech-news/trends/aiops-for-incident-management/
+- https://medium.com/@navya.cloudops/aiops-day5-incident-prediction-efe8284cbbf7
+- https://www.motadata.com/blog/achieving-faster-mean-time-to-resolution-mttr-with-aiops/
+- https://coralogix.com/guides/aiops/
+- https://medium.com/@tahirbalarabe2/reduce-incident-resolution-time-mttr-with-aiops-ce18b68d60e9
+- https://arxiv.org/html/2404.01363v1
+- https://theses.hal.science/tel-04391281/file/these.pdf
+- https://dl.acm.org/doi/10.1145/3690407.3690515
+- https://aditya-sunjava.medium.com/best-practices-for-optimizing-machine-learning-models-on-multi-cloud-platforms-overcoming-319a30e90ffa
+- https://www.bigpanda.io/blog/aiops-use-cases/
+- https://www.researchgate.net/publication/377614566_AIOps_in_Cloud-native_DevOps_IT_Operations_Management_with_Artificial_Intelligence
+- https://www.quinnox.com/qinfinite/aiops-reimagining-future-of-it-operations/
+- https://www.cloud4c.com/blogs/top-10-multi-cloud-management-tools-in-2024
+- https://rajivranjan.net/wp-content/uploads/2015/02/clams2014.pdf
+- https://www.microsoft.com/en-us/research/blog/aiopslab-building-ai-agents-for-autonomous-clouds/
+- https://arxiv.org/abs/2110.10974
+- https://www.microsoft.com/en-us/research/uploads/prod/2024/10/arxiv_AIOpsLab.pdf
+- https://www.semanticscholar.org/paper/Serverless-Edge-Computing%3A-Vision-and-Challenges-Aslanpour-Toosi/bcfde155063045443ab0315ef7738bc1253b5baa
+- https://arxiv.org/html/2401.02271v1
+- https://www.prisma.io/blog/overcoming-challenges-in-serverless-and-edge-environments-TQtONA0RVxuW
+- https://twimlai.com/podcast/twimlai/ai-trends-2025-ai-agents-and-multi-agent-systems/
+- https://support.zendesk.com/hc/en-us/articles/8711193917338-Announcing-new-plan-levels-and-capability-updates-for-AI-agents
+- https://www.akira.ai/blog/llm-as-judge-for-evaluating-ai-agents
+- https://www.analyticsvidhya.com/blog/2024/07/ai-agent-frameworks/
+- https://gabrielchua.me/daily-ai-papers/
+- https://github.com/asimsinan/LLM-Research/blob/main/2024.md
+- https://www.alation.com/blog/what-is-rlhf-reinforcement-learning-human-feedback/
+- https://arxiv.org/html/2312.10256v2
+- https://github.com/LantaoYu/MARL-Papers
+- https://www.researchgate.net/publication/384661110_Optimizing_Hybrid_and_Multi-Cloud_Architectures_for_Real-Time_Analytics_and_Data-Driven_Decisions
+- https://www.sciencedirect.com/science/article/abs/pii/S0196890424005016
+- https://www.codecontent.net/blog/optimize-performance-of-rag-model
+- https://lumenalta.com/insights/6-generative-ai-use-cases-in-banking-and-financial-services
+- https://link.springer.com/article/10.1007/s10489-021-02394-3
+- https://thesciencebrigade.com/JAIR/article/download/525/498/1074
+- https://medium.com/@ceciliabonucchi/bridging-intelligence-the-next-evolution-in-ai-with-hybrid-llm-and-rule-based-systems-db0d89998c6d
+- https://www.sciencedirect.com/science/article/pii/S2667241323000113
+- https://www.sciencedirect.com/science/article/abs/pii/S0306261924012790
+- https://nano-ntp.com/index.php/nano/article/download/2583/1935/4797
+- https://journals.sagepub.com/doi/full/10.1177/0958305X241256293
+- https://link.springer.com/article/10.1007/s44163-024-00211-7
+- https://www.researchgate.net/publication/380845952_Optimizing_renewable_energy_systems_through_artificial_intelligence_Review_and_future_prospects
+- https://www.sciencedirect.com/science/article/pii/S0950705123000230
+- https://www.linkedin.com/pulse/unveiling-googles-gemini-20-comprehensive-study-its-ai-ramachandran-ai3ee
+- https://www.evolution.ai/post/claude-vs-gpt-4o-vs-gemini
+- https://machine-learning-made-simple.medium.com/gpt-vs-claude-vs-gemini-for-agent-orchestration-b3fbc584f0f7
+- https://encord.com/blog/gpt-4o-vs-gemini-vs-claude-3-opus/
+- https://arxiv.org/html/2502.04695v1
+- https://arxiv.org/html/2501.04961v2
+- https://arxiv.org/html/2408.13296v1
+- https://www.lakera.ai/blog/reinforcement-learning-from-human-feedback
+- https://shelf.io/blog/reinforcement-learning-from-human-feedback-rlhf/
+- https://www.leewayhertz.com/reinforcement-learning-from-human-feedback/
+- https://medium.com/@thube09/reinforcement-learning-from-human-feedback-rlhf-a-game-changer-in-ai-training-198ae7e98b82
+- https://openreview.net/forum?id=AAxIs3D2ZZ
+- https://arxiv.org/html/2402.10958v1
+- https://arxiv.org/pdf/2407.16216
+- https://aclanthology.org/2024.acl-long.523.pdf
+- https://openreview.net/forum?id=hRwxZmcvW9
+- https://aman.ai/primers/ai/llm-alignment/
+- https://arxiv.org/html/2411.10915v1
+- https://arxiv.org/html/2405.11290v2
+- https://direct.mit.edu/coli/article/50/3/1097/121961/Bias-and-Fairness-in-Large-Language-Models-A
+- https://www.mdpi.com/2673-6470/4/1/1
+- https://neurips.cc/virtual/2024/events/datasets-benchmarks-2024
+- https://arxiv.org/pdf/2310.19736
+- https://openreview.net/forum?id=6KZ80APcxf
+- https://arxiv.org/pdf/2201.08164
+- https://www.linkedin.com/pulse/understanding-llm-benchmarks-how-create-custom-effi-bar-she-an-yhmue
+- https://arxiv.org/html/2401.03205v1
+- https://www.mdpi.com/2073-8994/16/9/1196
+- http://amatria.in/blog/hallucinations
+- https://arxiv.org/html/2406.00252v1
+- https://aclanthology.org/2024.acl-long.586.pdf
+- https://queue.acm.org/detail.cfm?id=3711679
+- https://assets-eu.researchsquare.com/files/rs-5164079/v1_covered_bd24cfbe-1ea8-405e-a1c6-d3cd2599d168.pdf
+- https://www.sapien.io/blog/reducing-hallucinations-in-llms
+- https://arxiv.org/html/2401.01313v2
+- https://arxiv.org/html/2408.13808v1
+- https://openreview.net/forum?id=GnaFrZRHPf&referrer=%5Bthe%20profile%20of%20Tuo%20Zhao%5D(%2Fprofile%3Fid%3D~Tuo_Zhao2)
+- https://neurips.cc/virtual/2024/session/108364
+- https://arxiv.org/abs/2402.10500
+- https://iclr.cc/virtual/2024/session/19808
+- https://shieldbase.ai/blog/best-practices-to-deploy-ai-agents
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC8285156/
+- https://www.sciencedirect.com/science/article/pii/S2444569X2300029X
+- https://www.researchgate.net/publication/377196828_Combining_Human_and_Artificial_Intelligence_Hybrid_Problem-Solving_in_Organizations
+- https://www.azorobotics.com/Article.aspx?ArticleID=740
+- https://support.zendesk.com/hc/en-us/articles/8357756439322-Analyzing-advanced-AI-agents-with-the-Performance-Overview-dashboard
+- https://www.zenml.io/blog/llmops-in-production-457-case-studies-of-what-actually-works
+- https://support.zendesk.com/hc/en-us/articles/6847708774554-Monitoring-AI-agent-performance-with-the-Insights-dashboard
+- https://interface.media/blog/topic/data-ai/
+- https://www.cognite.com/en/resources/guides/the-definitive-guide-to-generative-ai-for-industry
+- https://www.ijsat.org/papers/2025/1/1527.pdf
+- https://www.geeky-gadgets.com/openai-agentic-framework/
+- https://venturebeat.com/ai/openais-swarm-ai-agent-framework-routines-and-handoffs/
+- https://www.analyticsvidhya.com/blog/2024/10/openai-swarm/
+- https://medium.com/@alwin.arcane/finally-open-ai-annouces-swarm-multi-agent-system-30fcb1dae863
+- https://www.analyticsvidhya.com/blog/2024/12/managing-multi-agent-systems-with-openai-swarm/
+- https://thejournal.com/Articles/2024/10/29/New-OpenAI-Swarm-Framework-Offers-Open-Source-Tool-for-Multi-Agent-AI-Networks.aspx
+- https://github.com/kyegomez/swarms
+- https://arize.com/blog/comparing-openai-swarm/
+- https://medium.com/towards-data-science/hands-on-with-openai-swam-bbbffaa833e5
+- https://www.saasguru.co/single-agent-vs-multi-agent-ai-comparison/?srsltid=AfmBOooaRCAwtqIbXg2KRuv8Nu820TW9ieehrRE8UQ8SIt93be-9QWES
+- https://tecknexus.com/rule-based-vs-llm-based-ai-agents-a-side-by-side-comparison/
+- https://arxiv.org/html/2407.19098v1
+- https://www.researchgate.net/publication/382654263_Evaluating_Human-AI_Collaboration_A_Review_and_Methodological_Framework
+- https://arxiv.org/html/2412.01992v1
+- https://dev.to/exemplar/ai-agents-langgraph-vs-autogen-vs-crew-ai-key-differences-1di7
+- https://dumanmesut.medium.com/building-autonomous-multi-agent-systems-with-crewai-1a3b3a348271
+- https://blog.stackademic.com/navigating-the-ai-agent-landscape-in-depth-analysis-of-autogen-crewai-llamaindex-and-langchain-2a3bcd932abc
+- https://becomingahacker.org/technical-comparison-of-autogen-crewai-langgraph-and-openai-swarm-1e4e9571d725
+- https://www.ampcome.com/post/crewai-vs-autogen-which-is-best-to-build-ai-agents
+- https://github.com/jim-schwoebel/awesome_ai_agents
+- https://microsoft.github.io/autogen/0.2/docs/ecosystem/agentops/
+- https://medium.com/@surajmeshram994/autogen-exploring-autogens-capabilities-417cac27df4c
+- https://www.researchgate.net/publication/373164024_AutoGen_Enabling_Next-Gen_LLM_Applications_via_Multi-Agent_Conversation_Framework
+- https://www.helicone.ai/blog/crewai-vs-autogen
+- https://mironophir.medium.com/comparative-study-of-langgraph-autogen-and-crewai-for-building-multi-agent-system-d3b68af687f7
+- https://smythos.com/ai-agents/multi-agent-systems/intelligent-agents-and-multi-agent-systems/
+- https://journals.sagepub.com/doi/full/10.3233/AIC-220136
+- https://docs.swarms.world/en/latest/swarms_cloud/production_deployment/
+- https://www.sciencedirect.com/science/article/abs/pii/S0306261923009704
+- https://www.researchgate.net/publication/388647452_AI_Agents_Meet_Blockchain_A_Survey_on_Secure_and_Scalable_Collaboration_for_Multi-Agents
+- https://medium.com/@vikram40441/agentic-mesh-enhancing-autonomous-ai-agents-in-modern-enterprise-systems-991fa6f36d6a
+- https://medium.com/@sahin.samia/multi-agent-ai-systems-foundational-concepts-and-architectures-ece9f8859302
+- https://medium.com/@kyeg/the-challenges-of-multi-llm-agent-collaboration-a-technical-analysis-bb57f4179148
+- https://link.springer.com/article/10.1007/s44336-024-00009-2
+- https://www2.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/autonomous-generative-ai-agents-still-under-development.html
+- https://medium.com/@sahin.samia/current-trends-in-ai-agents-use-cases-and-the-future-ahead-1026c4d753fd
+- https://www.navex.com/en-us/blog/article/the-evolving-ai-regulatory-landscape-in-asia-what-compliance-leaders-need-to-know/
+- https://aiasiapacific.org/2024/04/11/eu-ai-act-implications-and-challenges-for-asia/
+- https://techinformed.com/2025-informed-scaling-responsible-ai-in-a-regulated-world/
+- https://trilligent.com/a-tale-of-two-policies-the-eu-ai-act-and-the-us-ai-executive-order-in-focus/
+- https://www.sciencedirect.com/science/article/pii/S0267364924000517
+- https://academic.oup.com/isr/article/25/3/viad040/7259354
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC8587491/
+- https://www.gmfus.org/sites/default/files/2024-11/ECA%20AI%20POLICY%20REPORT%20VER%206%5B46%5D.pdf
+- https://www.commerce.gov/news/press-releases/2024/04/us-eu-joint-statement-trade-and-technology-council
+- https://www.gmfus.org/news/global-ai-governance-key-steps-transatlantic-cooperation
+- https://www.restack.io/p/ai-in-logistics-answer-transatlantic-collaboration-cat-ai
+- https://www.nextgov.com/artificial-intelligence/2024/04/us-eu-update-shared-ai-taxonomy-unveil-new-research-alliance/395526/
+- https://www.transatlantic.org/wp-content/uploads/2023/01/Csernatoni_Background-Paper-on-the-EU-US-TTC-Cooperation-on-AI.pdf?mc_cid=5c3d87eca1
+- https://www.cio.com/article/2517656/adapting-to-ai-regulations-in-the-u-s-and-europe-impacts-on-cios-and-global-enterprises.html
+- https://petrieflom.law.harvard.edu/2024/04/04/eu-and-us-regulatory-challenges-facing-ai-health-care-innovator-firms/
+- https://www.paloaltonetworks.co.uk/cyberpedia/ai-risk-management-framework
+- https://www.cio.com/article/3595801/cios-look-to-sharpen-ai-governance-despite-uncertainties.html
+- https://www.linkedin.com/pulse/integrating-ai-risk-enterprise-management-erm-using-po0xf
+- https://www.salesforce.com/news/stories/cio-ai-trends/
+- https://www.netskope.com/blog/asias-evolving-ai-regulatory-landscape-lessons-from-cybersecurity-regulation
+- https://www.reworked.co/digital-workplace/how-agentic-ai-will-change-the-workplace-an-insider-view/
+- https://futurecfo.net/taking-a-strategic-approach-to-ai-adoption/
+- https://www.linkedin.com/pulse/aseans-ai-future-tech-economy-investment-patrick-tang-1ythc
+- https://scoop.market.us/agentic-ai-for-financial-services-market-news/
+- https://www.imf.org/en/Blogs/Articles/2025/01/05/how-artificial-intelligence-will-affect-asias-economies
+- https://www.globalpolicywatch.com/2024/04/overview-of-ai-regulatory-landscape-in-apac/
+- https://zhukov.live/agentic-ai-vendors-a-comprehensive-guide-for-businesses-eef2ac019978
+- https://www2.deloitte.com/us/en/insights/industry/technology/technology-media-telecom-outlooks/technology-industry-outlook.html
+- https://www.sciencedirect.com/science/article/pii/S0969699724001509
+- https://www.researchgate.net/publication/386107722_A_Comparative_Analysis_of_Artificial_Intelligence_Regulatory_Law_in_Asia_Europe_and_America
+- https://www.rezolve.ai/blog/ai-co-pilot-vs-agentic-ai-key-differences
+- https://www.gov.uk/government/consultations/ai-regulation-a-pro-innovation-approach-policy-proposals/outcome/a-pro-innovation-approach-to-ai-regulation-government-response
+- https://www.lawfaremedia.org/article/framework-interoperability-a-new-hope-for-global-digital-governance
+- https://www.taylorwessing.com/zh-hant/insights-and-events/aiq
+- https://www.linkedin.com/pulse/harmonizing-cross-border-legal-framework-ai-mustafa-saidalavi-mohamed-ve9jc
+- https://narwalinc.com/agentic-ai-the-future-of-autonomous-intelligence-and-decision-making/
+- https://smythos.com/ai-agents/agent-architectures/future-of-autonomous-agents/
+- https://www.ilink-digital.com/insights/blog/the-rise-of-agentic-ai-unlocking-the-future-of-autonomous-intelligence/
+- https://hbr.org/2024/12/what-is-agentic-ai-and-how-will-it-change-work
+- https://smythos.com/ai-integrations/tool-usage/custom-ai-agents/
+- https://smythos.com/ai-agents/multi-agent-systems/multi-agent-systems-frameworks/
+- https://smythos.com/ai-agents/multi-agent-systems/multi-agent-systems-in-ai/
+- https://sendbird.com/blog/multi-agent-systems
+- https://globalsecurityreview.com/navigating-the-new-frontier-agentic-ais-promise-and-challenges/
+- https://www.frontier-enterprise.com/the-2025-cybersecurity-predictions-bonanza/
+- https://wjarr.com/sites/default/files/WJARR-2024-0791.pdf
+- https://www.dentons.com/en/insights/articles/2025/january/10/ai-trends-for-2025-m-a-and-investments
+- https://www.cfodive.com/news/ma-dealmakers-seize-ai-strategic-cornerstone-dykema-dealmaking-generative-technology/730071/
+- https://www.boopos.com/all-post/m-a-trends
+- https://www.osler.com/en/insights/updates/ma-transactions-involving-ai-companies-due-diligence-considerations/
+- https://www.hunton.com/insights/publications/gdpr-ai-and-cybersecurity-considerations-in-m-a-transactions
+- https://cms.law/en/nld/publication/the-impact-of-the-ai-act-on-tech-m-a-due-diligence
+- https://www.eversheds-sutherland.com/en/austria/insights/ai-and-esg-emerging-forces-shaping-growth-strategies-and-ma
+- https://www.fieldfisher.com/en/insights/ai-in-m-a-assessing-transaction-risks
+- https://www.pillsburylaw.com/en/news-and-insights/eu-ai-act.html
+- https://www.eversheds-sutherland.com/en/united-states/insights/contracting-for-ai
+- https://www.dentons.com/en/insights/alerts/2024/september/16/when-your-m-a-target-uses-ai-part-2
+- https://www.corporatecomplianceinsights.com/ai-risk-merger-transactions/
+- https://c3.ai/c3-ai-and-microsoft-forge-strategic-alliance-to-accelerate-enterprise-ai-adoption/
+- https://www.researchgate.net/publication/382712060_AI-driven_Deals_Navigating_the_New_Era_of_Mergers_Acquisitions
+- https://financelygroup.medium.com/how-ai-will-completely-disrupt-investment-banking-cda09d450afa
+- https://www.lexology.com/library/detail.aspx?g=6b05cbc4-fc4b-4249-9cd3-149fa2fdb7f7
+- https://pallasllp.com/wp-content/uploads/2025/01/Law360-EUs-AI-Act-May-Lead-To-More-MA-Arbitration.pdf
+- https://cloud.google.com/transform/ai-impact-industries-2025
+- https://mitsloan.mit.edu/ideas-made-to-matter/leadership-and-ai-insights-2025-latest-mit-sloan-management-review
+- https://www.oecd.org/en/publications/the-impact-of-ai-on-the-workplace-main-findings-from-the-oecd-ai-surveys-of-employers-and-workers_ea0a0fe1-en.html
+- https://journals.sagepub.com/doi/10.1177/21582440221097890
+- https://www.sciencedirect.com/science/article/pii/S2773032823000032
+- https://woodyinternational.com/index.php/jtpet/article/view/25
+- https://www.sciencedirect.com/science/article/pii/S2941198X2400037X
+- https://www.nature.com/articles/s41598-022-12833-x
+- https://www.linkedin.com/pulse/case-studies-ai-integration-health-care-sector-thomas-conway-ph-d--hpp6e
+- https://www.sciencedirect.com/science/article/pii/S2666389924001314
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC7659898/
+- https://arxiv.org/html/2409.09727v1
+- https://outshift.cisco.com/blog/federated-learning-and-llms
+- https://thegradient.pub/decentralized-ai-for-healthcare/
+- https://accesspartnership.com/strengthen-us-ai-leadership/
+- https://himala.ai/blog/us-ai-leadership-strategy-innovation
+- https://natlawreview.com/article/key-insights-president-trumps-new-ai-executive-order-and-policy-regulatory
+- https://www.lawfaremedia.org/article/the-u.s.-plans-to-lead-the-way-on-global-ai-policy
+- https://www.lexology.com/library/detail.aspx?g=afa18beb-aa0d-4dd0-aab1-1c860283fdbf
+- https://complexdiscovery.com/trumps-ai-policies-a-shift-towards-deregulation-and-national-security-focus/
+- https://www.centercode.com/blog/4-beta-testing-examples-from-well-known-companies
+- https://www.researchgate.net/publication/378043059_EXPLORING_CASE_STUDIES_AND_BEST_PRACTICES_FOR_AI_INTEGRATION_IN_WORKPLACE_ADOPTION
+- https://www.sciencedirect.com/science/article/pii/S2468202024000329
+- https://www.vktr.com/ai-disruption/5-ai-case-studies-in-health-care/
+- https://www.sciencedirect.com/science/article/pii/S2666764924000018
+- https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-01191-1
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC10366918/
+- https://healthsnap.io/ai-in-remote-patient-monitoring-the-top-4-use-cases-in-2024/
+- https://www.researchgate.net/publication/388313991_Agentic_AI_Autonomous_Intelligence_for_Complex_Goals_-_A_Comprehensive_Survey
+- https://arxiv.org/html/2501.18002v1
+- https://www.bakertilly.com/insights/understanding-agentic-ai-revolutionize-your-business-operations
+- https://www.conted.ox.ac.uk/courses/agentic-workflows-design-and-implementation
+- https://arxiv.org/html/2501.13946v1
+- https://www.galileo.ai/blog/evaluating-ai-agent-performance-benchmarks-real-world-tasks
+- https://www.ansi.org/standards-news/all-news/2025/02/2-7-25-respond-to-rfi-input-to-support-ai-action-plan-advancing-us-leadership-in-ai
+- https://www.linkedin.com/pulse/2025-year-ai-agents-diamond-bishop-sgclc
+- https://arxiv.org/html/2501.09136v1
+- https://www.researchgate.net/publication/387577302_A_Survey_of_Agentic_AI_Multi-Agent_Systems_and_Multimodal_Frameworks_Architectures_Applications_and_Future_Directions
+- https://digitaldefynd.com/IQ/agentic-ai-vs-traditional-ai/
+- https://eh4s.eu/publication/comparative-analysis-of-ai-development-strategies-a-study-of-chinas-ambitions-and-the-e-us-regulatory-framework?fbclid=IwY2xjawFfX2RleHRuA2FlbQIxMAABHaskgNZxDXlxU_P7QJHPIIbRD3lPLTghsOOWAS4-_P9PsfWklCeMiuJ8hA_aem_lg2Cnoy4ssnv4bq
+- https://ceur-ws.org/Vol-3825/paper4-2.pdf
+- https://www.datacamp.com/blog/agentic-rag
+- https://arxiv.org/html/2501.09136v3
+- https://www.fluid.ai/blog/agentic-rag-vs-traditional-rag-the-future-of-ai-decision-making
+- https://www.ankursnewsletter.com/p/graph-rag-vs-traditional-rag-a-comparative
+- https://www.chitika.com/rag-vs-graph-rag-which-one-is-the-real-game-changer/
+- https://ragaboutit.com/agentic-rag-a-complete-guide-to-agent-based-retrieval-augmented-generation/
+- https://docs.llamaindex.ai/en/stable/examples/cookbooks/oreilly_course_cookbooks/Module-3/Evaluating_RAG_Systems/
+- https://oecd.ai/en/site/ai-futures/discussions/risk-thresholds-consultation
+- https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf
+- https://assets.kpmg.com/content/dam/kpmg/xx/pdf/2022/07/modern-risk-management-for-ai-models.pdf
+- https://carnegieendowment.org/research/2024/09/if-then-commitments-for-ai-risk-reduction
+- https://carnegieendowment.org/research/2024/12/a-sketch-of-potential-tripwire-capabilities-for-ai
+- https://www.sciencedirect.com/science/article/pii/S0925231224010531
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC8596373/
+- https://www.nature.com/articles/s41746-024-01258-7
+- https://thoropass.com/blog/compliance/nist-ai-rmf/
+- https://oecd.ai/fr/site/ai-futures/discussions/risk-thresholds-consultation
+- https://arxiv.org/html/2406.04554v1
+- https://blogs.oracle.com/ai-and-datascience/post/agentic-ai-game-changer-for-construction-industry
+- https://insights.daffodilsw.com/blog/everything-about-agentic-ai-its-use-cases-types-and-future-outlook
+- https://zhukov.live/understanding-ai-agentic-workflows-a-comprehensive-guide-002c95c05e2a
+- https://raga.ai/research/a-holistic-8-step-framework-for-evaluating-agentic-ai-systems
+- https://dr-arsanjani.medium.com/a-framework-for-enhanced-agentic-ai-smarter-safer-and-scalable-systems-d14f8b15c77e
+- https://www.linkedin.com/pulse/measuring-success-deep-dive-agentic-ai-system-evaluation-soma-sec5c
+- https://arxiv.org/abs/2502.04249
+- https://www.diplomacy.edu/blog/10-forecasts-for-ai-and-digitalisation-in-2025/
+- https://www.rapidinnovation.io/post/ai-agents-for-citizen-service-automation
+- https://bytebridge.medium.com/impact-of-ai-performance-efficiency-on-long-term-gpu-demand-the-case-of-deepseek-ai-7d5f607e9b9c
+- https://www.quora.com/How-does-DeepSeek-compare-to-other-popular-AI-models
+- https://www.linkedin.com/pulse/deepseek-ai-revolution-redefining-efficiency-supply-chain-uba-fcips-kinve
+- https://medium.com/@allen.westley/agentic-ai-in-the-wake-of-deepseek-a-thought-exercise-on-what-comes-next-fcca001ec98d
+- https://www.neudesic.com/?page=4&UTM_Source=ATARC&order=title&sort=asc
+- https://www.solulab.com/deepseek-vs-chatgpt/
+- https://news.ycombinator.com/item?id=42823568
+- https://news.ycombinator.com/item?id=42861475
+- https://www.adalovelaceinstitute.org/report/computing-commons/
+- https://epoch.ai/data/epochdb/all_ai_models.csv
+- https://institute.global/insights/tech-and-digitalisation/how-leaders-in-the-global-south-can-devise-ai-regulation-that-enables-innovation
+- https://keymakr.com/blog/regional-and-international-ai-regulations-and-laws-in-2024/
+- https://itif.org/publications/2021/07/19/how-barriers-cross-border-data-flows-are-spreading-globally-what-they-cost/
+- https://academic.oup.com/oxrep/article/39/1/70/7030588
+- https://academic.oup.com/ia/article/100/3/1275/7641064
+- https://carnegieendowment.org/research/2024/03/charting-the-geopolitics-and-european-governance-of-artificial-intelligence?lang=en&center=europe
+- https://link.springer.com/article/10.1007/s44163-024-00109-4
+- https://bipartisanpolicy.org/blog/tax-administration-and-ai/
+- https://www.gov.uk/government/publications/research-on-the-cyber-security-of-ai/cyber-security-risks-to-artificial-intelligence
+- https://www.elibrary.imf.org/view/journals/005/2024/006/article-A001-en.xml
+- https://www.researchgate.net/publication/378872617_Digital_taxation_artificial_intelligence_and_Tax_Administration_30_improving_tax_compliance_behavior_-_a_systematic_literature_review_using_textometry_2016-2023
+- https://techsur.solutions/ai-readiness-government-agencies/
+- https://www.reisystems.com/ai-in-government-a-strategic-framework-for-digital-transformation/
+- https://dataforest.ai/blog/governing-with-intelligence-the-impact-of-ai-on-public-sector-strategies
+- https://www.sciencedirect.com/science/article/pii/S0304405X2300185X
+- https://www.dhs.gov/archive/data/AI_inventory
+- https://www.sciencedirect.com/science/article/pii/S0740624X23000655
+- https://www.ncsl.org/technology-and-communication/artificial-intelligence-in-government-the-federal-and-state-landscape
+- https://oxfordinsights.com/ai-readiness/ai-readiness-index/
+- https://guidehouse.com/insights/advanced-solutions/2024/guiding-government-agencies-through-ai-complexity
